@@ -7,6 +7,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+//Manejo de archivos binarios
+
 namespace Proyecto_Final_Periodo3.Clases
 {
     class claseManejoArchivo
