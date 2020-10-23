@@ -7,8 +7,6 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-//Adelso Guerra
-
 namespace Proyecto_Final_Periodo3.Clases
 {
     class claseManejoArchivo
