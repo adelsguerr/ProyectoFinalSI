@@ -47,17 +47,36 @@ namespace Proyecto_Final_Periodo3.ventanas
         private void btnOk_Click(object sender, EventArgs e)
         {
             int index = cmbUsuario.SelectedIndex;
-           
-            if(txtPassword.Text == password[index])
-            {
-                formulario1.Enabled = true;
-                formulario1.botonesAdministrador(administrador[index]);
 
-                this.Close();
-            }
-            else
+            //if(txtPassword.Text == password[index])
+            //{
+            //    formulario1.Enabled = true;
+            //    formulario1.botonesAdministrador(administrador[index]);
+
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //}
+            try
             {
-                MessageBox.Show("Error", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                if (txtPassword.Text == password[index])
+                {
+                    formulario1.Enabled = true;
+                    formulario1.botonesAdministrador(administrador[index]);
+
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error, verifique la informacion ingresada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No ha seleccionado un usario", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
 
