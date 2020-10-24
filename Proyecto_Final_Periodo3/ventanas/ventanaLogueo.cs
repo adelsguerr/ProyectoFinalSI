@@ -46,19 +46,7 @@ namespace Proyecto_Final_Periodo3.ventanas
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            int index = cmbUsuario.SelectedIndex;
-
-            //if(txtPassword.Text == password[index])
-            //{
-            //    formulario1.Enabled = true;
-            //    formulario1.botonesAdministrador(administrador[index]);
-
-            //    this.Close();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Error", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            //}
+            int index = cmbUsuario.SelectedIndex;            
             try
             {
                 if (txtPassword.Text == password[index])
