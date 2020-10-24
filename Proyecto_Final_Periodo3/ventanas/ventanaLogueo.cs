@@ -63,7 +63,7 @@ namespace Proyecto_Final_Periodo3.ventanas
             }
             catch (Exception)
             {
-                MessageBox.Show("No ha seleccionado un usario", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No ha seleccionado un usuario", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
         }
