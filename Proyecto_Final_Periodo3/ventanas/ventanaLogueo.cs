@@ -56,14 +56,18 @@ namespace Proyecto_Final_Periodo3.ventanas
 
                     this.Close();
                 }
+                else if (txtPassword.Text == "")
+                {
+                    MessageBox.Show("No ha ingresado la contraseña", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else
                 {
-                    MessageBox.Show("Error, verifique la informacion ingresada", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("La contraseña es incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("No ha seleccionado un usuario", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No ha seleccionado un usuario", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
         }
