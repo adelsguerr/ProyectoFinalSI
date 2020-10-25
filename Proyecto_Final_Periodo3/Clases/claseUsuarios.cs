@@ -16,6 +16,7 @@ namespace Proyecto_Final_Periodo3.Clases
         private bool administrador;
         private string password;
 
+
         public claseUsuarios()
         {
 
@@ -27,5 +28,6 @@ namespace Proyecto_Final_Periodo3.Clases
         public string Puesto { get => puesto; set => puesto = value; }
         public bool Administrador { get => administrador; set => administrador = value; }
         public string Password { get => password; set => password = value; }
+ 
     }
 }

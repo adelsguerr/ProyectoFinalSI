@@ -52,7 +52,6 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             users.Puesto = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[3].Value);
             users.Administrador = Convert.ToBoolean(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[4].Value);
             users.Password = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[5].Value);
-
             ventanasUsuario.ventanaEditarUsuario ventanaEditar = new ventanaEditarUsuario(this,users);
             ventanaEditar.StartPosition = FormStartPosition.CenterParent;
             ventanaEditar.ShowDialog();
@@ -89,6 +88,11 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             dgvUsuarios.DataSource = null;
             dgvUsuarios.DataSource = listaUsuarios;
             archivoUsuarios.guardarUsuarios(listaUsuarios);
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

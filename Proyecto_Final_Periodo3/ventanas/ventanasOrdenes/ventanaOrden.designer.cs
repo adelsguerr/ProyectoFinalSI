@@ -112,6 +112,7 @@
             this.dgvMenu.AllowUserToDeleteRows = false;
             this.dgvMenu.AllowUserToResizeColumns = false;
             this.dgvMenu.AllowUserToResizeRows = false;
+            this.dgvMenu.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMenu.ColumnHeadersVisible = false;
             this.dgvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -168,6 +169,7 @@
             this.dgvOrden.AllowUserToDeleteRows = false;
             this.dgvOrden.AllowUserToResizeColumns = false;
             this.dgvOrden.AllowUserToResizeRows = false;
+            this.dgvOrden.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvOrden.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrden.Location = new System.Drawing.Point(331, 3);

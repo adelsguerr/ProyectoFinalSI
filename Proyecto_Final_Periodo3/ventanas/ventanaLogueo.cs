@@ -57,7 +57,8 @@ namespace Proyecto_Final_Periodo3.ventanas
             }
             else
             {
-                MessageBox.Show("Error", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                formulario1.Enabled = true;
+                MessageBox.Show("Error", "Ingrese datos", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 
