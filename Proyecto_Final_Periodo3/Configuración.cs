@@ -81,7 +81,7 @@ namespace Proyecto_Final_Periodo3
                 fs.Close();
                 return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 return false;

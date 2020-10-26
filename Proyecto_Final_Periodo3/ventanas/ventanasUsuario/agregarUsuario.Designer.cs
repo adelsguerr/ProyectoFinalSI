@@ -43,11 +43,8 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.txtPassword2 = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
-=======
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.SuspendLayout();
             // 
             // lblNombre
@@ -80,11 +77,8 @@
             // lblPuesto
             // 
             this.lblPuesto.AutoSize = true;
-<<<<<<< HEAD
             this.lblPuesto.Location = new System.Drawing.Point(12, 152);
-=======
             this.lblPuesto.Location = new System.Drawing.Point(13, 127);
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.lblPuesto.Name = "lblPuesto";
             this.lblPuesto.Size = new System.Drawing.Size(40, 13);
             this.lblPuesto.TabIndex = 0;
@@ -93,11 +87,8 @@
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-<<<<<<< HEAD
             this.lblAdministrador.Location = new System.Drawing.Point(12, 180);
-=======
             this.lblAdministrador.Location = new System.Drawing.Point(13, 155);
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(70, 26);
             this.lblAdministrador.TabIndex = 0;
@@ -135,11 +126,8 @@
             // 
             // btnGuardar
             // 
-<<<<<<< HEAD
             this.btnGuardar.Location = new System.Drawing.Point(262, 260);
-=======
             this.btnGuardar.Location = new System.Drawing.Point(248, 234);
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 6;
@@ -165,11 +153,8 @@
             "Mesero",
             "Cajero",
             "Gerente"});
-<<<<<<< HEAD
             this.cmbPuesto.Location = new System.Drawing.Point(91, 149);
-=======
             this.cmbPuesto.Location = new System.Drawing.Point(91, 124);
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(174, 21);
             this.cmbPuesto.TabIndex = 8;
@@ -177,11 +162,8 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-<<<<<<< HEAD
             this.lblPassword.Location = new System.Drawing.Point(12, 220);
-=======
             this.lblPassword.Location = new System.Drawing.Point(17, 194);
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(61, 13);
             this.lblPassword.TabIndex = 0;
@@ -205,7 +187,6 @@
             this.txtPassword2.TabIndex = 9;
             this.txtPassword2.UseSystemPasswordChar = true;
             // 
-<<<<<<< HEAD
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
@@ -222,23 +203,18 @@
             this.txtCorreo.Size = new System.Drawing.Size(174, 20);
             this.txtCorreo.TabIndex = 11;
             // 
-=======
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             // agregarUsuario
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(440, 298);
             this.ControlBox = false;
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblCorreo);
-=======
             this.ClientSize = new System.Drawing.Size(517, 270);
             this.ControlBox = false;
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword1);
             this.Controls.Add(this.cmbPuesto);
@@ -263,7 +239,6 @@
             this.Load += new System.EventHandler(this.agregarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -283,10 +258,7 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtPassword1;
         private System.Windows.Forms.TextBox txtPassword2;
-<<<<<<< HEAD
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
-=======
->>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
     }
 }
