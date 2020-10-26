@@ -112,6 +112,7 @@
             this.dgvMenu.AllowUserToDeleteRows = false;
             this.dgvMenu.AllowUserToResizeColumns = false;
             this.dgvMenu.AllowUserToResizeRows = false;
+            this.dgvMenu.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMenu.Location = new System.Drawing.Point(3, 3);
@@ -145,8 +146,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ventanaMenu";
-            this.Text = "ventanaMenu";
+            this.Text = "VentanaMenu";
             this.Load += new System.EventHandler(this.ventanaMenu_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

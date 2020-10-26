@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.btnMesas = new System.Windows.Forms.ToolStripButton();
             this.btnMenu = new System.Windows.Forms.ToolStripButton();
             this.btnUsuario = new System.Windows.Forms.ToolStripButton();
             this.btnAdmin = new System.Windows.Forms.ToolStripButton();
             this.tsrExit = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tsrChangeUser = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,13 +49,24 @@
             this.btnMenu,
             this.btnUsuario,
             this.btnAdmin,
-            this.tsrExit});
+            this.tsrExit,
+            this.tsrChangeUser});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(808, 63);
+            this.toolStrip1.Size = new System.Drawing.Size(894, 63);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 489);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(894, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // btnMesas
             // 
@@ -108,25 +120,28 @@
             this.tsrExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsrExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsrExit.Name = "tsrExit";
-            this.tsrExit.Size = new System.Drawing.Size(140, 60);
-            this.tsrExit.Text = "Salir de sistema";
+            this.tsrExit.Size = new System.Drawing.Size(144, 60);
+            this.tsrExit.Text = "Salir del Sistema";
             this.tsrExit.Click += new System.EventHandler(this.tsrExit_Click);
             // 
-            // statusStrip1
+            // tsrChangeUser
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 489);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(808, 22);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
+            this.tsrChangeUser.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsrChangeUser.Image = global::Proyecto_Final_Periodo3.Properties.Resources.chngUser;
+            this.tsrChangeUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.tsrChangeUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsrChangeUser.Name = "tsrChangeUser";
+            this.tsrChangeUser.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.tsrChangeUser.Size = new System.Drawing.Size(168, 60);
+            this.tsrChangeUser.Text = "Cambiar de Usuario";
+            this.tsrChangeUser.Click += new System.EventHandler(this.tsrChangeUser_Click);
             // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 511);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(894, 511);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -149,6 +164,7 @@
         private System.Windows.Forms.ToolStripButton btnMenu;
         private System.Windows.Forms.ToolStripButton btnUsuario;
         private System.Windows.Forms.ToolStripButton btnAdmin;
+        private System.Windows.Forms.ToolStripButton tsrChangeUser;
     }
 }
 

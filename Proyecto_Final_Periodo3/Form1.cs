@@ -134,5 +134,26 @@ namespace Proyecto_Final_Periodo3
         {
             
         }
+
+        private void tsrChangeUser_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.Count == 1)
+            {
+                DialogResult respuesta = MessageBox.Show("¿Quiere cambiar de usuario?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (respuesta == DialogResult.Yes)
+                {
+                    ventanas.ventanaLogueo logueo = new ventanas.ventanaLogueo(this);
+                    this.Enabled = false;
+                    logueo.ShowDialog();
+                    this.IsMdiContainer = true;
+                }
+                else if (respuesta == DialogResult.No)
+                { }
+            }
+            else
+            {
+                MessageBox.Show("Hay ventanas abiertas.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

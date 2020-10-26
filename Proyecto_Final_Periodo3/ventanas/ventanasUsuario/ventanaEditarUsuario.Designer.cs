@@ -43,11 +43,13 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtPassword2
             // 
-            this.txtPassword2.Location = new System.Drawing.Point(196, 165);
+            this.txtPassword2.Location = new System.Drawing.Point(197, 217);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
             this.txtPassword2.Size = new System.Drawing.Size(100, 20);
@@ -56,7 +58,7 @@
             // 
             // txtPassword1
             // 
-            this.txtPassword1.Location = new System.Drawing.Point(90, 165);
+            this.txtPassword1.Location = new System.Drawing.Point(91, 217);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
             this.txtPassword1.Size = new System.Drawing.Size(100, 20);
@@ -71,14 +73,14 @@
             "Mesero",
             "Cajero",
             "Gerente"});
-            this.cmbPuesto.Location = new System.Drawing.Point(90, 98);
+            this.cmbPuesto.Location = new System.Drawing.Point(91, 149);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.Size = new System.Drawing.Size(174, 21);
             this.cmbPuesto.TabIndex = 22;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(342, 208);
+            this.btnSalir.Location = new System.Drawing.Point(343, 260);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 21;
@@ -88,7 +90,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(247, 208);
+            this.btnGuardar.Location = new System.Drawing.Point(262, 260);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 20;
@@ -99,7 +101,7 @@
             // chkAdministrador
             // 
             this.chkAdministrador.AutoSize = true;
-            this.chkAdministrador.Location = new System.Drawing.Point(90, 129);
+            this.chkAdministrador.Location = new System.Drawing.Point(91, 187);
             this.chkAdministrador.Name = "chkAdministrador";
             this.chkAdministrador.Size = new System.Drawing.Size(15, 14);
             this.chkAdministrador.TabIndex = 19;
@@ -107,29 +109,29 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(90, 67);
+            this.txtDireccion.Location = new System.Drawing.Point(91, 85);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(317, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(327, 20);
             this.txtDireccion.TabIndex = 18;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(90, 35);
+            this.txtTelefono.Location = new System.Drawing.Point(91, 53);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(100, 20);
             this.txtTelefono.TabIndex = 17;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(90, 6);
+            this.txtNombre.Location = new System.Drawing.Point(91, 21);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(317, 20);
+            this.txtNombre.Size = new System.Drawing.Size(232, 20);
             this.txtNombre.TabIndex = 16;
             // 
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Location = new System.Drawing.Point(12, 129);
+            this.lblAdministrador.Location = new System.Drawing.Point(12, 180);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(70, 26);
             this.lblAdministrador.TabIndex = 10;
@@ -138,7 +140,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(16, 168);
+            this.lblPassword.Location = new System.Drawing.Point(12, 220);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(61, 13);
             this.lblPassword.TabIndex = 11;
@@ -147,7 +149,7 @@
             // lblPuesto
             // 
             this.lblPuesto.AutoSize = true;
-            this.lblPuesto.Location = new System.Drawing.Point(12, 101);
+            this.lblPuesto.Location = new System.Drawing.Point(12, 152);
             this.lblPuesto.Name = "lblPuesto";
             this.lblPuesto.Size = new System.Drawing.Size(40, 13);
             this.lblPuesto.TabIndex = 12;
@@ -156,7 +158,7 @@
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(12, 70);
+            this.lblDireccion.Location = new System.Drawing.Point(12, 88);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(52, 13);
             this.lblDireccion.TabIndex = 13;
@@ -165,7 +167,7 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(12, 42);
+            this.lblTelefono.Location = new System.Drawing.Point(12, 56);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(49, 13);
             this.lblTelefono.TabIndex = 14;
@@ -174,18 +176,37 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(12, 9);
+            this.lblNombre.Location = new System.Drawing.Point(12, 24);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 15;
             this.lblNombre.Text = "Nombre";
             // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(91, 118);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(174, 20);
+            this.txtCorreo.TabIndex = 25;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(12, 120);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(38, 13);
+            this.lblCorreo.TabIndex = 26;
+            this.lblCorreo.Text = "Correo";
+            // 
             // ventanaEditarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 250);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(440, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.lblCorreo);
+            this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword1);
             this.Controls.Add(this.cmbPuesto);
@@ -205,8 +226,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaEditarUsuario";
-            this.Text = "ventanaEditarUsuario";
-            this.Load += new System.EventHandler(this.ventanaEditarUsuario_Load);
+            this.Text = "Editar Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +249,7 @@
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.Label lblCorreo;
     }
 }
