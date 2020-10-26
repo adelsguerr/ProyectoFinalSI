@@ -12,9 +12,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Proyecto_Final_Periodo3
 {
-    public partial class Configuración : Form
+    public partial class Configuracion : Form
     {
-        public Configuración()
+        public Configuracion()
         {
             InitializeComponent();
         }

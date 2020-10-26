@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaEditarMenu));
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -125,7 +126,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(299, 174);
-            this.ControlBox = false;
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblTipo);
@@ -134,11 +134,12 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaEditarMenu";
-            this.Text = "ventanaEditarMenu";
+            this.Text = "Editar Menú";
             this.ResumeLayout(false);
             this.PerformLayout();
 

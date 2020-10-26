@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaLogueo));
             this.btnOk = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -104,7 +105,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(270, 190);
-            this.ControlBox = false;
             this.Controls.Add(this.cmbUsuario);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblPassword);
@@ -112,7 +112,8 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnOk);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaLogueo";

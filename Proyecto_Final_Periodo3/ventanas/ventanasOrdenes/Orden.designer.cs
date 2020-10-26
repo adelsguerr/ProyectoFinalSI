@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orden));
             this.flpMesas = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(517, 486);
             this.Controls.Add(this.flpMesas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Orden";
             this.Text = "Orden";

@@ -16,7 +16,7 @@ namespace Proyecto_Final_Periodo3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form1());
+            Application.Run(new formPrincipal());
         }
     }
 }

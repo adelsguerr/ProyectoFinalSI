@@ -16,9 +16,9 @@ namespace Proyecto_Final_Periodo3.ventanas
         private List<Clases.claseUsuarios> users = new List<Clases.claseUsuarios>();
         private string[] password;
         private bool[] administrador;
-        private form1 formulario1;
+        private formPrincipal formulario1;
         
-        public ventanaLogueo(form1 f)
+        public ventanaLogueo(formPrincipal f)
         {
             InitializeComponent();
             formulario1 = f;

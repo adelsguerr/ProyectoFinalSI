@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final_Periodo3
 {
-    partial class Configuración
+    partial class Configuracion
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
             this.lblNumberTable = new System.Windows.Forms.Label();
             this.nudNumberTable = new System.Windows.Forms.NumericUpDown();
             this.lblTip = new System.Windows.Forms.Label();
@@ -123,7 +124,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(248, 174);
-            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.nudTip);
@@ -131,6 +131,7 @@
             this.Controls.Add(this.nudNumberTable);
             this.Controls.Add(this.lblNumberTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

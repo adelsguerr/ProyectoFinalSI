@@ -63,6 +63,10 @@
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>logo2.ico</ApplicationIcon>
+  </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
@@ -86,17 +90,17 @@
     <Compile Include="Clases\claseOrden.cs" />
     <Compile Include="Clases\claseUsuarios.cs" />
     <Compile Include="Comandas.cs" />
-    <Compile Include="Configuración.cs">
+    <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración.Designer.cs">
-      <DependentUpon>Configuración.cs</DependentUpon>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="formPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,11 +158,11 @@
     <Compile Include="ventanas\ventanasUsuario\ventanaUsuario.Designer.cs">
       <DependentUpon>ventanaUsuario.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Configuración.resx">
-      <DependentUpon>Configuración.cs</DependentUpon>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -220,6 +224,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imgs\Cancel.png" />
+    <Content Include="logo2.ico" />
     <None Include="imgs\chngUser.png" />
     <Content Include="imgs\Eat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

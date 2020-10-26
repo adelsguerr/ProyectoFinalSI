@@ -14,10 +14,10 @@ namespace Proyecto_Final_Periodo3
 {
     public partial class Orden : Form
     {
-        form1 ventanaPrincipal;
+        formPrincipal ventanaPrincipal;
 
         Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
-        public Orden(form1 f)
+        public Orden(formPrincipal f)
         {
             InitializeComponent();
             ventanaPrincipal = f;

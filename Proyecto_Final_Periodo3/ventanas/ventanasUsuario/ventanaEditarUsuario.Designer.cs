@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaEditarUsuario));
             this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
@@ -204,7 +205,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(440, 298);
-            this.ControlBox = false;
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtPassword2);
@@ -223,6 +223,7 @@
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaEditarUsuario";
