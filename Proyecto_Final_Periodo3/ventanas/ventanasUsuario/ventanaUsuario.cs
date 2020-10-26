@@ -52,11 +52,17 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             users.Nombre = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[0].Value);
             users.Telefono = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[1].Value);
             users.Direccion = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[2].Value);
+<<<<<<< HEAD
             users.Correo = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[3].Value);
             users.Puesto = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[4].Value);
             users.Administrador = Convert.ToBoolean(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[5].Value);
             users.Password = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[6].Value);
 
+=======
+            users.Puesto = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[3].Value);
+            users.Administrador = Convert.ToBoolean(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[4].Value);
+            users.Password = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[5].Value);
+>>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
             ventanasUsuario.ventanaEditarUsuario ventanaEditar = new ventanaEditarUsuario(this,users);
             ventanaEditar.StartPosition = FormStartPosition.CenterParent;
             ventanaEditar.ShowDialog();
@@ -96,6 +102,13 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             archivoUsuarios.guardarUsuarios(listaUsuarios);
         }
 
+<<<<<<< HEAD
         
+=======
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+>>>>>>> 8cd4fc46e4a6b319d6742829a0f87b4c8b101c82
     }
 }
