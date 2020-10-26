@@ -220,6 +220,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imgs\Cancel.png" />
+    <None Include="imgs\chngUser.png" />
     <Content Include="imgs\Eat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
