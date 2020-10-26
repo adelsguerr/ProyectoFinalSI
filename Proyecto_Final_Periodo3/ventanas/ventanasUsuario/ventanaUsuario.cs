@@ -12,6 +12,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
 {
     public partial class ventanaUsuario : Form
     {
+        private bool cambioSeleccion;
+
         Clases.claseManejoArchivo archivoUsuarios = new Clases.claseManejoArchivo();
         List<Clases.claseUsuarios> listaUsuarios = new List<Clases.claseUsuarios>();
         public ventanaUsuario()
@@ -29,6 +31,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             listaUsuarios.Clear();
             listaUsuarios = archivoUsuarios.cargarUsuarios();
             dgvUsuarios.DataSource = listaUsuarios;
+            dgvUsuarios.ClearSelection();
         }
 
         private void tsbAgregar_Click(object sender, EventArgs e)
@@ -49,9 +52,10 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             users.Nombre = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[0].Value);
             users.Telefono = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[1].Value);
             users.Direccion = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[2].Value);
-            users.Puesto = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[3].Value);
-            users.Administrador = Convert.ToBoolean(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[4].Value);
-            users.Password = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[5].Value);
+            users.Correo = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[3].Value);
+            users.Puesto = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[4].Value);
+            users.Administrador = Convert.ToBoolean(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[5].Value);
+            users.Password = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[6].Value);
 
             ventanasUsuario.ventanaEditarUsuario ventanaEditar = new ventanaEditarUsuario(this,users);
             ventanaEditar.StartPosition = FormStartPosition.CenterParent;
@@ -72,6 +76,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Nombre = users.Nombre;
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Telefono= users.Telefono;
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Direccion = users.Direccion;
+            listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Correo = users.Correo;
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Puesto = users.Puesto;
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Administrador = users.Administrador;
             listaUsuarios.ElementAt(dgvUsuarios.CurrentRow.Index).Password = users.Password;
@@ -90,5 +95,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             dgvUsuarios.DataSource = listaUsuarios;
             archivoUsuarios.guardarUsuarios(listaUsuarios);
         }
+
+        
     }
 }

@@ -70,3 +70,37 @@ D:\PC\Escritorio\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Fina
 D:\PC\Escritorio\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3 - SI.csproj.CoreCompileInputs.cache
 D:\PC\Escritorio\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.exe
 D:\PC\Escritorio\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.pdb
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\AddUser.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Admin.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Eat.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Exit.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Menu.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\NoteBook.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Order.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\search.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\StatusBar.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Table.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\ToolBar.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\User.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Waiter.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\imgs\Wrench.png
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\Proyecto_Final_Periodo3.exe.config
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\Proyecto_Final_Periodo3.exe
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\bin\Debug\Proyecto_Final_Periodo3.pdb
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3 - SI.csprojAssemblyReference.cache
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.Configuración.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.form1.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.Properties.Resources.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanaAgregarMenu.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanaEditarMenu.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanaLogueo.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanaMenu.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.Orden.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanasOrdenes.ventanaOrden.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanasUsuario.agregarUsuario.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanasUsuario.ventanaEditarUsuario.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.ventanas.ventanasUsuario.ventanaUsuario.resources
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3 - SI.csproj.GenerateResource.cache
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3 - SI.csproj.CoreCompileInputs.cache
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.exe
+C:\MyProjects\GitHub\C#\ProyectoFinalSI\Proyecto_Final_Periodo3\obj\Debug\Proyecto_Final_Periodo3.pdb
