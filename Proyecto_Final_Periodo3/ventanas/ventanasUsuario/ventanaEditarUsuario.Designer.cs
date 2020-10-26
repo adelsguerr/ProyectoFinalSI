@@ -101,7 +101,7 @@
             // chkAdministrador
             // 
             this.chkAdministrador.AutoSize = true;
-            this.chkAdministrador.Location = new System.Drawing.Point(91, 181);
+            this.chkAdministrador.Location = new System.Drawing.Point(91, 187);
             this.chkAdministrador.Name = "chkAdministrador";
             this.chkAdministrador.Size = new System.Drawing.Size(15, 14);
             this.chkAdministrador.TabIndex = 19;
