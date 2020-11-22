@@ -116,6 +116,7 @@
             this.dgvMenu.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMenu.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvMenu.Location = new System.Drawing.Point(3, 3);
             this.dgvMenu.MultiSelect = false;
             this.dgvMenu.Name = "dgvMenu";

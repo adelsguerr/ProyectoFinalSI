@@ -55,7 +55,7 @@
     <ManifestKeyFile>Proyecto_Final_Periodo3_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -224,6 +224,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imgs\Cancel.png" />
+    <None Include="imgs\logo.png" />
+    <None Include="imgs\logo2.ico" />
     <Content Include="logo2.ico" />
     <None Include="imgs\chngUser.png" />
     <Content Include="imgs\Eat.png">

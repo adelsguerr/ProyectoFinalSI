@@ -27,7 +27,6 @@ namespace Proyecto_Final_Periodo3
 
         private void tsrAdmin_Click(object sender, EventArgs e)
         {
-
             bool bandera = true;
             foreach (Form formulario in Application.OpenForms)
             {
@@ -48,19 +47,20 @@ namespace Proyecto_Final_Periodo3
         private void tsrMenu_Click(object sender, EventArgs e)
         {
             bool bandera = true;
-            foreach(Form formulario in Application.OpenForms)
+            foreach (Form formulario in Application.OpenForms)
             {
-                if(formulario.GetType() == typeof(ventanas.ventanaMenu))
+                if (formulario.GetType() == typeof(ventanas.ventanaMenu))
                 {
                     bandera = false;
                 }
             }
 
-            if(bandera == true){
-            ventanas.ventanaMenu vMenu = new ventanas.ventanaMenu();
-            vMenu.MdiParent = this;
-            vMenu.Show();
-            }               
+            if (bandera == true)
+            {
+                ventanas.ventanaMenu vMenu = new ventanas.ventanaMenu();
+                vMenu.MdiParent = this;
+                vMenu.Show();
+            }
         }
 
         private void tsrUser_Click(object sender, EventArgs e)
@@ -108,6 +108,12 @@ namespace Proyecto_Final_Periodo3
                 btnMenu.Visible = false;
                 btnUsuario.Visible = false;
                 btnAdmin.Visible = false;
+            }
+            else
+            {
+                btnMenu.Visible = true;
+                btnUsuario.Visible = true;
+                btnAdmin.Visible = true;
             }
         }
 
