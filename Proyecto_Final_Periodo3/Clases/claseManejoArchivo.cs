@@ -11,18 +11,19 @@ namespace Proyecto_Final_Periodo3.Clases
 {
     class claseManejoArchivo
     {
-        
+
         public claseManejoArchivo()
         {
-            List<Clases.claseMenu> listaMenu = new List<claseMenu>();
-            if (!(File.Exists("archivoMenu.dat"))){
+            List<claseMenu> listaMenu = new List<claseMenu>();
+            if (!(File.Exists("archivoMenu.dat")))
+            {
                 BinaryFormatter formater = new BinaryFormatter();
                 FileStream fs = new FileStream("archivoMenu.dat", FileMode.Create, FileAccess.Write);
                 formater.Serialize(fs, listaMenu);
                 fs.Close();
             }
 
-            List<Clases.claseUsuarios> listaUsuarios = new List<claseUsuarios>();
+            List<claseUsuarios> listaUsuarios = new List<claseUsuarios>();
             if (!(File.Exists("archivoUsuarios.dat")))
             {
                 BinaryFormatter formater = new BinaryFormatter();
@@ -32,10 +33,11 @@ namespace Proyecto_Final_Periodo3.Clases
             }
         }
 
-        public List<Clases.claseMenu> cargarMenu()
+        public List<claseMenu> cargarMenu()
         {
-            List<Clases.claseMenu> listaMenu = new List<Clases.claseMenu>();
-            if(File.Exists("archivoMenu.dat")){
+            List<claseMenu> listaMenu = new List<claseMenu>();
+            if (File.Exists("archivoMenu.dat"))
+            {
                 BinaryFormatter formater = new BinaryFormatter();
                 FileStream fs = new FileStream("archivoMenu.dat", FileMode.Open, FileAccess.Read);
                 listaMenu = (List<Clases.claseMenu>)formater.Deserialize(fs);
@@ -65,14 +67,14 @@ namespace Proyecto_Final_Periodo3.Clases
             }
         }
 
-        public List<Clases.claseUsuarios> cargarUsuarios()
+        public List<claseUsuarios> cargarUsuarios()
         {
-            List<Clases.claseUsuarios> listaUsuarios = new List<Clases.claseUsuarios>();
+            List<claseUsuarios> listaUsuarios = new List<claseUsuarios>();
             if (File.Exists("archivoUsuarios.dat"))
             {
                 BinaryFormatter formater = new BinaryFormatter();
                 FileStream fs = new FileStream("archivoUsuarios.dat", FileMode.Open, FileAccess.Read);
-                listaUsuarios = (List<Clases.claseUsuarios>)formater.Deserialize(fs);
+                listaUsuarios = (List<claseUsuarios>)formater.Deserialize(fs);
                 fs.Close();
             }
             else
@@ -82,7 +84,7 @@ namespace Proyecto_Final_Periodo3.Clases
             return listaUsuarios;
         }
 
-        public void guardarUsuarios(List<Clases.claseUsuarios> lista)
+        public void guardarUsuarios(List<claseUsuarios> lista)
         {
             if (File.Exists("archivoUsuarios.dat"))
             {
@@ -98,11 +100,11 @@ namespace Proyecto_Final_Periodo3.Clases
             }
         }
 
-        public List<Clases.claseOrden> cargarOrden(int numeroMesa)
+        public List<claseOrden> cargarOrden(int numeroMesa)
         {
-            List<Clases.claseOrden> orden = new List<claseOrden>();
+            List<claseOrden> orden = new List<claseOrden>();
 
-            if(!File.Exists("archivoMesa" + numeroMesa + ".dat"))
+            if (!File.Exists("archivoMesa" + numeroMesa + ".dat"))
             {
                 BinaryFormatter formaterCrear = new BinaryFormatter();
                 FileStream fsCrear = new FileStream("archivoMesa" + numeroMesa + ".dat", FileMode.Create, FileAccess.Write);
@@ -112,9 +114,9 @@ namespace Proyecto_Final_Periodo3.Clases
 
             BinaryFormatter formater = new BinaryFormatter();
             FileStream fs = new FileStream("archivoMesa" + numeroMesa + ".dat", FileMode.Open, FileAccess.Read);
-            orden = (List<Clases.claseOrden>)formater.Deserialize(fs);
+            orden = (List<claseOrden>)formater.Deserialize(fs);
             fs.Close();
-             
+
             return orden;
         }
 
@@ -138,9 +140,9 @@ namespace Proyecto_Final_Periodo3.Clases
         }
 
 
-        public Clases.claseMesa cargarMesa()
+        public claseMesa cargarMesa()
         {
-            Clases.claseMesa mesa;
+            claseMesa mesa;
 
             if (!File.Exists("configuracion.dat"))
             {
@@ -153,14 +155,14 @@ namespace Proyecto_Final_Periodo3.Clases
 
             BinaryFormatter formater = new BinaryFormatter();
             FileStream fs = new FileStream("configuracion.dat", FileMode.Open, FileAccess.Read);
-            mesa = (Clases.claseMesa)formater.Deserialize(fs);
+            mesa = (claseMesa)formater.Deserialize(fs);
             fs.Close();
 
             return mesa;
 
         }
 
-        public void guardarMesa(Clases.claseMesa objetoMesa)
+        public void guardarMesa(claseMesa objetoMesa)
         {
             if (File.Exists("configuracion.dat"))
             {
@@ -180,5 +182,5 @@ namespace Proyecto_Final_Periodo3.Clases
         }
 
     }
-    }
+}
 
