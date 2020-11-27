@@ -26,6 +26,27 @@ namespace Proyecto_Final_Periodo3.Clases
             List<claseUsuarios> listaUsuarios = new List<claseUsuarios>();
             if (!(File.Exists("archivoUsuarios.dat")))
             {
+                listaUsuarios.Add(new claseUsuarios()
+                {
+                    Nombre = "Administrador",
+                    Telefono = "2222-2222",
+                    Direccion = "Santa Ana, El Salvador",
+                    Correo = "admin@restaurante.com",
+                    Puesto = "Administrador del Sistema",
+                    Administrador = true,
+                    Password = "admin"
+                });
+
+                listaUsuarios.Add(new claseUsuarios()
+                {
+                    Nombre = "Empleado",
+                    Telefono = "2222-2222",
+                    Direccion = "Santa Ana, El Salvador",
+                    Correo = "empleado@restaurante.com",
+                    Puesto = "Mesero",
+                    Administrador = false,
+                    Password = "empleado"
+                });
                 BinaryFormatter formater = new BinaryFormatter();
                 FileStream fs = new FileStream("archivoUsuarios.dat", FileMode.Create, FileAccess.Write);
                 formater.Serialize(fs, listaUsuarios);

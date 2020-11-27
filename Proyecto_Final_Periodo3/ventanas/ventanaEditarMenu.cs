@@ -12,7 +12,7 @@ namespace Proyecto_Final_Periodo3.ventanas
 {
     public partial class ventanaEditarMenu : Form
     {
-        private ventanas.ventanaMenu ventanaMenu;
+        private ventanaMenu ventanaMenu;
         private Clases.claseMenu objetoMenu = new Clases.claseMenu();
         public ventanaEditarMenu(ventanaMenu vMenu, Clases.claseMenu menu)
         {

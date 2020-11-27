@@ -22,25 +22,29 @@ namespace Proyecto_Final_Periodo3.ventanas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
+            if (txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
             {
                 MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            //else if (Convert.ToDecimal(txtPrecio)<=0)
+            //{
+            //    MessageBox.Show("El precio debe ser monetario", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
             else
             {
-                    objetoMenu.Nombre = txtNombre.Text;
-                    objetoMenu.Tipo = cmbTipo.Text;
-                    objetoMenu.Precio = txtPrecio.Text;
-                
-                    ventanaMenu.actualizarGuardado(objetoMenu);  
+                objetoMenu.Nombre = txtNombre.Text;
+                objetoMenu.Tipo = cmbTipo.Text;
+                objetoMenu.Precio = txtPrecio.Text;
 
-                    txtNombre.Text = "";
-                    txtPrecio.Text = "";
-                    cmbTipo.SelectedIndex = -1;
+                ventanaMenu.actualizarGuardado(objetoMenu);
+
+                txtNombre.Text = "";
+                txtPrecio.Text = "";
+                cmbTipo.SelectedIndex = -1;
+                this.Close();
             }
-   
         }
-              private void btnSalir_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }

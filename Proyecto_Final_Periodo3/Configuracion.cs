@@ -44,17 +44,18 @@ namespace Proyecto_Final_Periodo3
                     errConfig.SetError(nudTip, "Ingrese un número mayor a 5");
                 }
                 else
+                {
                     errConfig.SetError(nudTip, null);
-
-
+                }
 
                 if (bandera)
                 {
                     decimal propina = nudTip.Value, cantidad = nudNumberTable.Value;
-                    Clases.claseMesa mesa = new Clases.claseMesa(cantidad,propina);
+                    Clases.claseMesa mesa = new Clases.claseMesa(cantidad, propina);
                     if (GuardarConfig(mesa))
                     {
                         MessageBox.Show("Se ha actualizado la configuración");
+                        this.Close();
                     }
                     else
                     {
@@ -66,8 +67,6 @@ namespace Proyecto_Final_Periodo3
             {
                 MessageBox.Show("Cierra la venta de ordenes para actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
-         
         }
 
         private bool GuardarConfig(Clases.claseMesa mesa)
@@ -86,7 +85,6 @@ namespace Proyecto_Final_Periodo3
 
                 return false;
             }
-
         }
 
         private void Configuración_Load(object sender, EventArgs e)
@@ -99,15 +97,17 @@ namespace Proyecto_Final_Periodo3
             }
             else
             {
-                nudNumberTable.Value = mesas.CantidadMesas;
-                nudTip.Value = mesas.Propina;
+                if (mesas.CantidadMesas == 0)
+                {
+                    nudNumberTable.Value = 1;
+                }
+                else
+                {
+                    nudNumberTable.Value = mesas.CantidadMesas;
+                    nudTip.Value = mesas.Propina;
+                }
             }
-
-
-            
         }
-
-        
 
         private void btnExit_Click(object sender, EventArgs e)
         {
