@@ -27,7 +27,7 @@ namespace Proyecto_Final_Periodo3
         {
             
             Bitmap imagenMesa;
-            imagenMesa = new Bitmap(Proyecto_Final_Periodo3.Properties.Resources.Table);
+            imagenMesa = new Bitmap(Properties.Resources.Table);
             
 
             Clases.claseMesa mesa = archivoMesas.cargarMesa();
@@ -52,6 +52,10 @@ namespace Proyecto_Final_Periodo3
                     boton.Click += new EventHandler(estado);
                     flpMesas.Controls.Add(boton);
                 }
+            }
+            else
+            {
+                MessageBox.Show("No hay mesas aún\n Puede agregar mesas en Configuración.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             colorear();

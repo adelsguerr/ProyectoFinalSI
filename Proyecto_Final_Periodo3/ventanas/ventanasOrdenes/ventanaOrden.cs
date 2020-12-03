@@ -14,6 +14,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
     {
         List<Clases.claseOrden> listaOrden = new List<Clases.claseOrden>();
         Clases.claseManejoArchivo archivoOrden = new Clases.claseManejoArchivo();
+        Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
         Orden ventanaO;
         public ventanaOrden(int num,Orden v)
         {
@@ -66,17 +67,10 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             foreach(DataGridViewRow dgr in dgvMenu.Rows)
             {
                 DataGridViewCell buttonCell = dgr.Cells[3];
-                buttonCell.Value = "Agregar";
-                
+                buttonCell.Value = "Agregar";      
             }
-
-
         }
 
-        public void clickAgregar()
-        {
-
-        }
 
         private void dgvMenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -94,33 +88,25 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             }
             dgvOrden.DataSource = listaOrden;
             archivoOrden.guardarOrden(listaOrden, Convert.ToInt32(lblMesaNum.Text));
-            sumar();
+            Venta();
         }
 
-        private void dgvOrden_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Venta()
         {
-           
-        }
-
-        private void sumar()
-        {
-
-            decimal total = 0;
-
+            decimal total = 0, subtotal = 0;
             for(int i = 0;i < dgvOrden.Rows.Count; i++)
             {
                 total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
             }
-
+            Clases.claseMesa PropinaOrden = archivoMesas.cargarMesa();
+            subtotal = PropinaOrden.Propina * total;
             lblTotal.Text = "$" + total;
-
         }
 
         private void btbCerrar_Click(object sender, EventArgs e)
         {
             ventanaO.colorear();
-            this.Close();
-            
+            Close();
         }
 
         private void ventanaOrden_Load(object sender, EventArgs e)
@@ -131,8 +117,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             {
                 dgvOrden.DataSource = listaOrden;
             }
-
-            sumar();
+            Venta();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -142,7 +127,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             dgvOrden.DataSource = listaOrden;
 
             archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
-            sumar();
+            Venta();
         }
 
         private void btnCobrar_Click(object sender, EventArgs e)
@@ -154,20 +139,15 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             else
             {
                 DialogResult dialogR = MessageBox.Show("¿El cliente pagará la cuenta?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
                 if(dialogR == DialogResult.Yes)
                 {
                     MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     listaOrden.Clear();
                     archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
                     ventanaO.colorear();
-                    this.Close();
+                    Close();
                 }
             }
-
-
-            
-
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Proyecto_Final_Periodo3
                     if (GuardarConfig(mesa))
                     {
                         MessageBox.Show("Se ha actualizado la configuración");
-                        this.Close();
+                        Close();
                     }
                     else
                     {
@@ -65,7 +65,7 @@ namespace Proyecto_Final_Periodo3
             }
             else
             {
-                MessageBox.Show("Cierra la venta de ordenes para actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Cierre la venta de ordenes para actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -111,7 +111,7 @@ namespace Proyecto_Final_Periodo3
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

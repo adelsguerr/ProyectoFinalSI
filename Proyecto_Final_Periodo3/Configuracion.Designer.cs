@@ -118,7 +118,7 @@
             // 
             this.errConfig.ContainerControl = this;
             // 
-            // Configuración
+            // Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +135,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Configuración";
+            this.Name = "Configuracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Configuración";
             this.Load += new System.EventHandler(this.Configuración_Load);
