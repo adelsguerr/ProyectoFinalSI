@@ -93,14 +93,17 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 
         private void Venta()
         {
-            decimal total = 0, subtotal = 0;
+            decimal total = 0, subtotal = 0, ventaTotal = 0;
             for(int i = 0;i < dgvOrden.Rows.Count; i++)
             {
                 total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
             }
             Clases.claseMesa PropinaOrden = archivoMesas.cargarMesa();
-            subtotal = PropinaOrden.Propina * total;
-            lblTotal.Text = "$" + total;
+            lblPropina.Text = "("+ PropinaOrden.Propina + "%)";
+            subtotal = (PropinaOrden.Propina * total)/100;
+            lblSubTotal.Text = "$" + total;
+            ventaTotal = total + subtotal;
+            lblTotal.Text = "$" + ventaTotal;
         }
 
         private void btbCerrar_Click(object sender, EventArgs e)
