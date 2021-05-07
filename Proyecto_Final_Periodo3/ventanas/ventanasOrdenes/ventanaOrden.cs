@@ -88,10 +88,10 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             }
             dgvOrden.DataSource = listaOrden;
             archivoOrden.guardarOrden(listaOrden, Convert.ToInt32(lblMesaNum.Text));
-            Venta();
+            VentaTotal();
         }
 
-        private void Venta()
+        private void VentaTotal()
         {
             decimal total = 0, subtotal = 0, ventaTotal = 0;
             for(int i = 0;i < dgvOrden.Rows.Count; i++)
@@ -101,9 +101,15 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             Clases.claseMesa PropinaOrden = archivoMesas.cargarMesa();
             lblPropina.Text = "("+ PropinaOrden.Propina + "%)";
             subtotal = (PropinaOrden.Propina * total)/100;
-            lblSubTotal.Text = "$" + total;
-            ventaTotal = total + subtotal;
-            lblTotal.Text = "$" + ventaTotal;
+            lblSubTotal.Text = "$" + total;           
+            lblTotal.Text = "$" + Venta(total, PropinaOrden.Propina);
+        }
+
+        public static decimal Venta(decimal total, decimal propina)
+        {
+            decimal subtotal = (propina * total) / 100;
+            decimal ventaTotal = total + subtotal;
+            return ventaTotal;
         }
 
         private void btbCerrar_Click(object sender, EventArgs e)
@@ -120,7 +126,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             {
                 dgvOrden.DataSource = listaOrden;
             }
-            Venta();
+            VentaTotal();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -130,7 +136,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             dgvOrden.DataSource = listaOrden;
 
             archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
-            Venta();
+            VentaTotal();
         }
 
         private void btnCobrar_Click(object sender, EventArgs e)

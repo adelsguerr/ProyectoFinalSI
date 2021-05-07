@@ -71,7 +71,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -90,7 +90,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -106,7 +106,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
@@ -125,7 +125,7 @@
             this.dgvMenu.ColumnHeadersVisible = false;
             this.dgvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMenu.Location = new System.Drawing.Point(4, 43);
-            this.dgvMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvMenu.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMenu.MultiSelect = false;
             this.dgvMenu.Name = "dgvMenu";
             this.dgvMenu.ReadOnly = true;
@@ -143,7 +143,7 @@
             this.panel1.Controls.Add(this.cmbTipo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 31);
             this.panel1.TabIndex = 1;
@@ -171,7 +171,7 @@
             "Bebidas",
             "Postres"});
             this.cmbTipo.Location = new System.Drawing.Point(151, 1);
-            this.cmbTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(155, 28);
             this.cmbTipo.TabIndex = 0;
@@ -188,7 +188,7 @@
             this.dgvOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvOrden.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrden.Location = new System.Drawing.Point(441, 4);
-            this.dgvOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvOrden.Margin = new System.Windows.Forms.Padding(4);
             this.dgvOrden.Name = "dgvOrden";
             this.dgvOrden.ReadOnly = true;
             this.dgvOrden.RowHeadersVisible = false;
@@ -204,7 +204,7 @@
             this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(332, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(101, 538);
             this.panel2.TabIndex = 2;
@@ -225,7 +225,7 @@
             this.nudCantidad.BackColor = System.Drawing.SystemColors.Window;
             this.nudCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudCantidad.Location = new System.Drawing.Point(4, 43);
-            this.nudCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.nudCantidad.Minimum = new decimal(new int[] {
             1,
             0,
@@ -242,11 +242,12 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Image = global::Proyecto_Final_Periodo3.Properties.Resources.Cancel;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(11, 105);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(9, 106);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(76, 117);
+            this.btnEliminar.Size = new System.Drawing.Size(78, 119);
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "Eliminar\r\nplato";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -267,7 +268,7 @@
             this.panel3.Controls.Add(this.lblPalabraTotal);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(4, 558);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1095, 74);
             this.panel3.TabIndex = 1;
@@ -347,7 +348,7 @@
             this.btbCerrar.Image = global::Proyecto_Final_Periodo3.Properties.Resources.Exit;
             this.btbCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btbCerrar.Location = new System.Drawing.Point(955, 9);
-            this.btbCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btbCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btbCerrar.Name = "btbCerrar";
             this.btbCerrar.Size = new System.Drawing.Size(128, 62);
             this.btbCerrar.TabIndex = 1;
@@ -403,7 +404,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaOrden";
