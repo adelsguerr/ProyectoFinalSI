@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proyecto_Final_Periodo3.Properties
+namespace Proyecto_Final_Periodo3
 {
 
 

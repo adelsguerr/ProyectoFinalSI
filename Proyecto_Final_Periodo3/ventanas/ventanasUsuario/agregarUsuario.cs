@@ -25,7 +25,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             //Validación de campos vacíos
             try
             {
-                if (txtNombre.Text == "" || txtDireccion.Text == "" || txtCorreo.Text=="" ||cmbPuesto.Text == "" || txtPassword1.Text == "")
+                if (txtNombre.Text == "" || txtDireccion.Text == "" || txtCorreo.Text == "" || cmbPuesto.Text == "" || txtPassword1.Text == "")
                 {
                     MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -79,7 +79,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             this.Close();
         }
 
-        public void cargar(string nombre, string telefono, string direccion,string correo, string puesto, bool administrador, string password)
+        public void cargar(string nombre, string telefono, string direccion, string correo, string puesto, bool administrador, string password)
         {
 
 
