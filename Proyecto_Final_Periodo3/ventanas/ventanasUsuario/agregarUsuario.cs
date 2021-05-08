@@ -8,6 +8,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
     {
         ventanasUsuario.ventanaUsuario ventanaUsuarios = new ventanaUsuario();
         private Clases.claseUsuarios objetoUsuarios = new Clases.claseUsuarios();
+        private Clases.Validaciones val = new Clases.Validaciones();
         public agregarUsuario(ventanas.ventanasUsuario.ventanaUsuario vUsuarios)
         {
 
@@ -91,6 +92,16 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             @"^[-!#$%&'*+/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$");
             return rx.IsMatch(email);
 
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloLetras(txtNombre, e);
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloNumeros(txtTelefono, e);
         }
 
 

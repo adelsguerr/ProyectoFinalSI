@@ -15,6 +15,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
     {
         private ventanas.ventanasUsuario.ventanaUsuario ventanaUsuario;
         private Clases.claseUsuarios objetoUsuarios = new Clases.claseUsuarios();
+        private Clases.Validaciones val = new Clases.Validaciones();
+
         public ventanaEditarUsuario(ventanaUsuario vUser, Clases.claseUsuarios user)
         {
             InitializeComponent();
@@ -86,6 +88,17 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        // Validación de escritura
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloLetras(txtNombre, e);
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloNumeros(txtTelefono, e);
         }
     }
 }
