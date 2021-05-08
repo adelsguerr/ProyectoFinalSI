@@ -8,7 +8,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
     {
         ventanasUsuario.ventanaUsuario ventanaUsuarios = new ventanaUsuario();
         private Clases.claseUsuarios objetoUsuarios = new Clases.claseUsuarios();
-        public agregarUsuario(ventanas.ventanasUsuario.ventanaUsuario vUsuarios)
+        public agregarUsuario(ventanaUsuario vUsuarios)
         {
 
             InitializeComponent();
@@ -92,6 +92,13 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             return rx.IsMatch(email);
 
         }
+
+
+
+
+
+
+
 
 
         //private void Verificacion_Click(object sender, EventArgs e)

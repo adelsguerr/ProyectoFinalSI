@@ -16,6 +16,9 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
         Clases.claseManejoArchivo archivoOrden = new Clases.claseManejoArchivo();
         Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
         Orden ventanaO;
+
+        public const string TotalMayorDeCeroMessage = "Es mayor a 0";
+        public const string TotalMenorDeCeroMessage = "Error, El total es menor a 0";
         public ventanaOrden(int num,Orden v)
         {
             InitializeComponent();
@@ -93,23 +96,35 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 
         private void VentaTotal()
         {
-            decimal total = 0, subtotal = 0, ventaTotal = 0;
+            decimal total = 0;
             for(int i = 0;i < dgvOrden.Rows.Count; i++)
             {
                 total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
             }
             Clases.claseMesa PropinaOrden = archivoMesas.cargarMesa();
             lblPropina.Text = "("+ PropinaOrden.Propina + "%)";
-            subtotal = (PropinaOrden.Propina * total)/100;
+            decimal subtotal = (PropinaOrden.Propina * total)/100;
             lblSubTotal.Text = "$" + total;           
             lblTotal.Text = "$" + Venta(total, PropinaOrden.Propina);
         }
 
         public static decimal Venta(decimal total, decimal propina)
         {
-            decimal subtotal = (propina * total) / 100;
+            //decimal subtotal = (propina * total) / 100;
+            decimal subtotal = (total) / 100;
             decimal ventaTotal = total + subtotal;
-            return ventaTotal;
+
+            if (ventaTotal > 0)
+            {
+                MessageBox.Show("Venta de $" + ventaTotal, TotalMayorDeCeroMessage);
+            }
+
+            if (ventaTotal < 0)
+            {
+                throw new ArgumentOutOfRangeException("Venta", ventaTotal, TotalMenorDeCeroMessage);
+            }
+
+            return decimal.Round(ventaTotal, 2);
         }
 
         private void btbCerrar_Click(object sender, EventArgs e)
