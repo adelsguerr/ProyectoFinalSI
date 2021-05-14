@@ -52,6 +52,7 @@
             this.btnCobrar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblPalabraTotal = new System.Windows.Forms.Label();
+            this.rptTickets = new Telerik.ReportViewer.WinForms.ReportViewer();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -199,6 +200,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.rptTickets);
             this.panel2.Controls.Add(this.lblCantidad);
             this.panel2.Controls.Add(this.nudCantidad);
             this.panel2.Controls.Add(this.btnEliminar);
@@ -242,7 +244,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Image = global::Proyecto_Final_Periodo3.Properties.Resources.Cancel;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEliminar.Location = new System.Drawing.Point(9, 106);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
@@ -345,7 +347,7 @@
             // 
             // btbCerrar
             // 
-            this.btbCerrar.Image = global::Proyecto_Final_Periodo3.Properties.Resources.Exit;
+            this.btbCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btbCerrar.Image")));
             this.btbCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btbCerrar.Location = new System.Drawing.Point(955, 9);
             this.btbCerrar.Margin = new System.Windows.Forms.Padding(4);
@@ -359,7 +361,7 @@
             // 
             // btnCobrar
             // 
-            this.btnCobrar.Image = global::Proyecto_Final_Periodo3.Properties.Resources.ok;
+            this.btnCobrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCobrar.Image")));
             this.btnCobrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCobrar.Location = new System.Drawing.Point(767, 9);
             this.btnCobrar.Margin = new System.Windows.Forms.Padding(4);
@@ -394,6 +396,15 @@
             this.lblPalabraTotal.Size = new System.Drawing.Size(73, 29);
             this.lblPalabraTotal.TabIndex = 0;
             this.lblPalabraTotal.Text = "Total";
+            // 
+            // rptTickets
+            // 
+            this.rptTickets.AccessibilityKeyMap = null;
+            this.rptTickets.Location = new System.Drawing.Point(9, 237);
+            this.rptTickets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rptTickets.Name = "rptTickets";
+            this.rptTickets.Size = new System.Drawing.Size(78, 301);
+            this.rptTickets.TabIndex = 3;
             // 
             // ventanaOrden
             // 
@@ -451,5 +462,6 @@
         private System.Windows.Forms.Label lblPalabraPropina;
         private System.Windows.Forms.Label lblSubTotal;
         private System.Windows.Forms.Label lblPalabraSubTotal;
+        private Telerik.ReportViewer.WinForms.ReportViewer rptTickets;
     }
 }

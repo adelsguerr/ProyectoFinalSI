@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.IO;
 
 namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 {
@@ -17,8 +20,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
         Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
         Orden ventanaO;
 
-        public const string TotalMayorDeCeroMessage = "Es mayor a 0";
-        public const string TotalMenorDeCeroMessage = "Error, El total es menor a 0";
+        //public const string TotalMayorDeCeroMessage = "Es mayor a 0";
+        //public const string TotalMenorDeCeroMessage = "Error, El total es menor a 0";
         public ventanaOrden(int num,Orden v)
         {
             InitializeComponent();
@@ -114,15 +117,15 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
             decimal subtotal = (total) / 100;
             decimal ventaTotal = total + subtotal;
 
-            if (ventaTotal > 0)
-            {
-                MessageBox.Show("Venta de $" + ventaTotal, TotalMayorDeCeroMessage);
-            }
+            //if (ventaTotal > 0)
+            //{
+            //    MessageBox.Show("Venta de $" + ventaTotal, TotalMayorDeCeroMessage);
+            //}
 
-            if (ventaTotal < 0)
-            {
-                throw new ArgumentOutOfRangeException("Venta", ventaTotal, TotalMenorDeCeroMessage);
-            }
+            //if (ventaTotal < 0)
+            //{
+            //    throw new ArgumentOutOfRangeException("Venta", ventaTotal, TotalMenorDeCeroMessage);
+            //}
 
             return decimal.Round(ventaTotal, 2);
         }
@@ -166,12 +169,35 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
                 if(dialogR == DialogResult.Yes)
                 {
                     MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ImprimirTicket();
                     listaOrden.Clear();
                     archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
                     ventanaO.colorear();
                     Close();
                 }
+
+
             }
+
+
+        }
+
+
+        private void ImprimirTicket()
+        {
+            //for (int i = 0; i < dgvOrden.Rows.Count; i++)
+            //{
+            //    total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
+            //}
+            dgvOrden.DataSource = listaOrden;
+            //var dt = new DataTable();
+            var ticket = new Ticket.TicketVenta();
+            ticket.DataSource = listaOrden;
+            ticket.tblOrdenProductos.DataSource = listaOrden;
+            rptTickets.Report = ticket;
+            rptTickets.RefreshReport();
+
+            
         }
     }
 }

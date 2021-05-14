@@ -43,14 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Proyecto_Final_Periodo3.exe" size="349184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Proyecto_Final_Periodo3.exe" size="406016">
       <assemblyIdentity name="Proyecto_Final_Periodo3" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>liJXjSwJRMcYaclDOxoz8czBa3+0Su6LkasRgOMikZ8=</dsig:DigestValue>
+        <dsig:DigestValue>V/hLES3OlyfBFjjrKyvFtPuMlRVJXcBY1TunhBnhjhs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Reporting.dll" size="12064256">
+      <assemblyIdentity name="Telerik.Reporting" version="13.0.19.116" publicKeyToken="A9D7983DFCC261BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xVmeLS1QTju1MZbI3Fax5tf6CgTfbTihIBKPQifndbU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.ReportViewer.WinForms.dll" size="476160">
+      <assemblyIdentity name="Telerik.ReportViewer.WinForms" version="13.0.19.116" publicKeyToken="A9D7983DFCC261BE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Fs9MVdWM8+WA5n/YSV9/X0HNsr+7ZxRujITqVkR6MU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
