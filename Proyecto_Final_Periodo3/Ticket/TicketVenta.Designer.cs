@@ -17,9 +17,11 @@ namespace Proyecto_Final_Periodo3.Ticket
             Telerik.Reporting.TableGroup tableGroup4 = new Telerik.Reporting.TableGroup();
             Telerik.Reporting.TableGroup tableGroup5 = new Telerik.Reporting.TableGroup();
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
+            this.textBox15 = new Telerik.Reporting.TextBox();
+            this.textBox17 = new Telerik.Reporting.TextBox();
+            this.textBox9 = new Telerik.Reporting.TextBox();
+            this.textBox19 = new Telerik.Reporting.TextBox();
             this.pageHeaderSection1 = new Telerik.Reporting.PageHeaderSection();
-            this.detail = new Telerik.Reporting.DetailSection();
-            this.pageFooterSection1 = new Telerik.Reporting.PageFooterSection();
             this.pctBoxLogo = new Telerik.Reporting.PictureBox();
             this.txtDireccion = new Telerik.Reporting.TextBox();
             this.textBox1 = new Telerik.Reporting.TextBox();
@@ -29,18 +31,16 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox5 = new Telerik.Reporting.TextBox();
             this.textBox6 = new Telerik.Reporting.TextBox();
             this.textBox7 = new Telerik.Reporting.TextBox();
-            this.textBox8 = new Telerik.Reporting.TextBox();
             this.textBox13 = new Telerik.Reporting.TextBox();
             this.textBox14 = new Telerik.Reporting.TextBox();
+            this.detail = new Telerik.Reporting.DetailSection();
+            this.textBox8 = new Telerik.Reporting.TextBox();
             this.tblOrdenProductos = new Telerik.Reporting.Table();
-            this.textBox15 = new Telerik.Reporting.TextBox();
             this.textBox16 = new Telerik.Reporting.TextBox();
-            this.textBox17 = new Telerik.Reporting.TextBox();
             this.textBox18 = new Telerik.Reporting.TextBox();
             this.textBox20 = new Telerik.Reporting.TextBox();
-            this.textBox9 = new Telerik.Reporting.TextBox();
             this.textBox10 = new Telerik.Reporting.TextBox();
-            this.textBox19 = new Telerik.Reporting.TextBox();
+            this.pageFooterSection1 = new Telerik.Reporting.PageFooterSection();
             this.textBox11 = new Telerik.Reporting.TextBox();
             this.textBox12 = new Telerik.Reporting.TextBox();
             this.textBox21 = new Telerik.Reporting.TextBox();
@@ -53,6 +53,35 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox28 = new Telerik.Reporting.TextBox();
             this.textBox29 = new Telerik.Reporting.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // textBox15
+            // 
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.125D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
+            this.textBox15.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            resources.ApplyResources(this.textBox15, "textBox15");
+            // 
+            // textBox17
+            // 
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.385D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
+            this.textBox17.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            resources.ApplyResources(this.textBox17, "textBox17");
+            // 
+            // textBox9
+            // 
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.513D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
+            this.textBox9.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.textBox9.StyleName = "";
+            resources.ApplyResources(this.textBox9, "textBox9");
+            // 
+            // textBox19
+            // 
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.342D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
+            this.textBox19.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            resources.ApplyResources(this.textBox19, "textBox19");
             // 
             // pageHeaderSection1
             // 
@@ -71,34 +100,8 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox14});
             this.pageHeaderSection1.Name = "pageHeaderSection1";
             // 
-            // detail
-            // 
-            this.detail.Height = Telerik.Reporting.Drawing.Unit.Cm(2.7D);
-            this.detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-            this.textBox8,
-            this.tblOrdenProductos});
-            this.detail.Name = "detail";
-            // 
-            // pageFooterSection1
-            // 
-            this.pageFooterSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(3.8D);
-            this.pageFooterSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-            this.textBox11,
-            this.textBox12,
-            this.textBox21,
-            this.textBox22,
-            this.textBox23,
-            this.textBox24,
-            this.textBox25,
-            this.textBox26,
-            this.textBox27,
-            this.textBox28,
-            this.textBox29});
-            this.pageFooterSection1.Name = "pageFooterSection1";
-            // 
             // pctBoxLogo
             // 
-            this.pctBoxLogo.Docking = Telerik.Reporting.DockingStyle.None;
             this.pctBoxLogo.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0.4D), Telerik.Reporting.Drawing.Unit.Cm(0D));
             this.pctBoxLogo.MimeType = "image/jpeg";
             this.pctBoxLogo.Name = "pctBoxLogo";
@@ -111,7 +114,6 @@ namespace Proyecto_Final_Periodo3.Ticket
             // txtDireccion
             // 
             this.txtDireccion.Angle = 0D;
-            this.txtDireccion.Docking = Telerik.Reporting.DockingStyle.None;
             this.txtDireccion.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(2.5D));
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(7.6D), Telerik.Reporting.Drawing.Unit.Cm(2.3D));
@@ -172,15 +174,6 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox7.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
             resources.ApplyResources(this.textBox7, "textBox7");
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(0D));
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(7.6D), Telerik.Reporting.Drawing.Unit.Cm(0.4D));
-            this.textBox8.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.textBox8.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            resources.ApplyResources(this.textBox8, "textBox8");
-            // 
             // textBox13
             // 
             this.textBox13.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(6D));
@@ -194,6 +187,23 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.8D), Telerik.Reporting.Drawing.Unit.Cm(0.399D));
             resources.ApplyResources(this.textBox14, "textBox14");
+            // 
+            // detail
+            // 
+            this.detail.Height = Telerik.Reporting.Drawing.Unit.Cm(2.7D);
+            this.detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.textBox8,
+            this.tblOrdenProductos});
+            this.detail.Name = "detail";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(0D));
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(7.6D), Telerik.Reporting.Drawing.Unit.Cm(0.4D));
+            this.textBox8.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.textBox8.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            resources.ApplyResources(this.textBox8, "textBox8");
             // 
             // tblOrdenProductos
             // 
@@ -221,38 +231,24 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.tblOrdenProductos.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
             this.textBox16,
             this.textBox18,
+            this.textBox10,
             this.textBox20,
             this.textBox15,
             this.textBox17,
-            this.textBox19,
             this.textBox9,
-            this.textBox10});
+            this.textBox19});
             this.tblOrdenProductos.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0.1D), Telerik.Reporting.Drawing.Unit.Cm(0.6D));
             this.tblOrdenProductos.Name = "tblOrdenProductos";
             tableGroup5.Groupings.Add(new Telerik.Reporting.Grouping(null));
             tableGroup5.Name = "detailTableGroup";
             this.tblOrdenProductos.RowGroups.Add(tableGroup5);
-            this.tblOrdenProductos.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(7.366D), Telerik.Reporting.Drawing.Unit.Cm(1.926D));
-            // 
-            // textBox15
-            // 
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.125D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
-            this.textBox15.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            resources.ApplyResources(this.textBox15, "textBox15");
+            this.tblOrdenProductos.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(7.365D), Telerik.Reporting.Drawing.Unit.Cm(1.926D));
             // 
             // textBox16
             // 
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.125D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
             resources.ApplyResources(this.textBox16, "textBox16");
-            // 
-            // textBox17
-            // 
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.385D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
-            this.textBox17.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            resources.ApplyResources(this.textBox17, "textBox17");
             // 
             // textBox18
             // 
@@ -266,14 +262,6 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox20.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.342D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
             resources.ApplyResources(this.textBox20, "textBox20");
             // 
-            // textBox9
-            // 
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.513D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
-            this.textBox9.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.textBox9.StyleName = "";
-            resources.ApplyResources(this.textBox9, "textBox9");
-            // 
             // textBox10
             // 
             this.textBox10.Name = "textBox10";
@@ -281,12 +269,22 @@ namespace Proyecto_Final_Periodo3.Ticket
             this.textBox10.StyleName = "";
             resources.ApplyResources(this.textBox10, "textBox10");
             // 
-            // textBox19
+            // pageFooterSection1
             // 
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.342D), Telerik.Reporting.Drawing.Unit.Cm(0.963D));
-            this.textBox19.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            resources.ApplyResources(this.textBox19, "textBox19");
+            this.pageFooterSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(3.8D);
+            this.pageFooterSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.textBox11,
+            this.textBox12,
+            this.textBox21,
+            this.textBox22,
+            this.textBox23,
+            this.textBox24,
+            this.textBox25,
+            this.textBox26,
+            this.textBox27,
+            this.textBox28,
+            this.textBox29});
+            this.pageFooterSection1.Name = "pageFooterSection1";
             // 
             // textBox11
             // 
