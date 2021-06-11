@@ -76,5 +76,10 @@ namespace Proyecto_Final_Periodo3.ventanas
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
