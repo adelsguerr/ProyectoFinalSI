@@ -93,6 +93,7 @@
     <Compile Include="Clases\claseMesa.cs" />
     <Compile Include="Clases\claseOrden.cs" />
     <Compile Include="Clases\claseUsuarios.cs" />
+    <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="Comandas.cs" />
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>

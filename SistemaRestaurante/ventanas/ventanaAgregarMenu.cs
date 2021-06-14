@@ -14,6 +14,7 @@ namespace Proyecto_Final_Periodo3.ventanas
     {
         private ventanas.ventanaMenu ventanaMenu;
         private Clases.claseMenu objetoMenu = new Clases.claseMenu();
+        private Clases.Validaciones val = new Clases.Validaciones();
         public ventanaAgregarMenu(ventanas.ventanaMenu ventana)
         {
             ventanaMenu = ventana;
@@ -47,6 +48,23 @@ namespace Proyecto_Final_Periodo3.ventanas
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPrecio_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                double i = Convert.ToDouble(txtPrecio.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Ingrese un precio correcto", "Error de precio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.precio(txtPrecio, e);
         }
     }
 }

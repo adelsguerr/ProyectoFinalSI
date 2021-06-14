@@ -8,7 +8,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
     {
         ventanasUsuario.ventanaUsuario ventanaUsuarios = new ventanaUsuario();
         private Clases.claseUsuarios objetoUsuarios = new Clases.claseUsuarios();
-        public agregarUsuario(ventanaUsuario vUsuarios)
+        private Clases.Validaciones val = new Clases.Validaciones();
+        public agregarUsuario(ventanas.ventanasUsuario.ventanaUsuario vUsuarios)
         {
 
             InitializeComponent();
@@ -93,12 +94,15 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
 
         }
 
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloLetras(txtNombre, e);
+        }
 
-
-
-
-
-
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.SoloNumeros(txtTelefono, e);
+        }
 
 
         //private void Verificacion_Click(object sender, EventArgs e)
