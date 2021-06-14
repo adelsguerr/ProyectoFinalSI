@@ -73,9 +73,9 @@ namespace Proyecto_Final_Periodo3
         {
             try
             {
-                File.Delete("ventanaMesaPropina.dat");
+                File.Delete("configuracion.dat");
                 BinaryFormatter formatter = new BinaryFormatter();
-                FileStream fs = new FileStream("ventanaMesaPropina.dat", FileMode.Create, FileAccess.Write);
+                FileStream fs = new FileStream("configuracion.dat", FileMode.Create, FileAccess.Write);
                 formatter.Serialize(fs, mesa);
                 fs.Close();
                 return true;

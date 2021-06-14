@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using System.Drawing.Printing;
-using System.IO;
+using System.Drawing;
 
 namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 {
@@ -19,10 +12,10 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
         Clases.claseManejoArchivo archivoOrden = new Clases.claseManejoArchivo();
         Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
         Orden ventanaO;
+        
+        
 
-        //public const string TotalMayorDeCeroMessage = "Es mayor a 0";
-        //public const string TotalMenorDeCeroMessage = "Error, El total es menor a 0";
-        public ventanaOrden(int num,Orden v)
+        public ventanaOrden(int num,Orden v) 
         {
             InitializeComponent();
             lblMesaNum.Text = Convert.ToString(num);
@@ -113,20 +106,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 
         public static decimal Venta(decimal total, decimal propina)
         {
-            //decimal subtotal = (propina * total) / 100;
-            decimal subtotal = (total) / 100;
+            decimal subtotal = (propina * total) / 100;
             decimal ventaTotal = total + subtotal;
-
-            //if (ventaTotal > 0)
-            //{
-            //    MessageBox.Show("Venta de $" + ventaTotal, TotalMayorDeCeroMessage);
-            //}
-
-            //if (ventaTotal < 0)
-            //{
-            //    throw new ArgumentOutOfRangeException("Venta", ventaTotal, TotalMenorDeCeroMessage);
-            //}
-
             return decimal.Round(ventaTotal, 2);
         }
 
@@ -168,32 +149,97 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
                 DialogResult dialogR = MessageBox.Show("¿El cliente pagará la cuenta?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(dialogR == DialogResult.Yes)
                 {
-                    MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ImprimirTicket();
+                   
+                    MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);                   
                     listaOrden.Clear();
                     archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
                     ventanaO.colorear();
+                    printDocument1 = new PrintDocument();
+                    PrinterSettings ps = new PrinterSettings();
+                    printDocument1.PrinterSettings = ps;
+                    printDocument1.PrintPage += Imprimir;
+                    printDocument1.Print();
                     Close();
                 }
             }
         }
 
-
-        private void ImprimirTicket()
+        private void Imprimir(object sender, PrintPageEventArgs e)
         {
-            ////for (int i = 0; i < dgvOrden.Rows.Count; i++)
-            ////{
-            ////    total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
-            ////}
-            //dgvOrden.DataSource = listaOrden;
-            ////var dt = new DataTable();
-            //var ticket = new Ticket.TicketVenta();
-            //ticket.DataSource = listaOrden;
-            //ticket.tblOrdenProductos.DataSource = listaOrden;
-            //rptTickets.Report = ticket;
-            //rptTickets.RefreshReport();
+            Bitmap logo;
+            logo = new Bitmap(Properties.Resources.seasons_logo);
+            Graphics ticket = e.Graphics;
+            Font titulo = new Font("Arial", 12, FontStyle.Bold);
+            string borde = "**********************************";
+            int x = 0;
+            int y = 0;
+            int newline = 0;
 
-            
+            var srcRect = new Rectangle(0, 0, logo.Width, logo.Height);
+            var desRect = new Rectangle(40, 40, 195, 80);
+            using(var bpm = new Bitmap(srcRect.Width, srcRect.Height))
+            {
+                ticket.DrawImage(bpm, desRect, srcRect, GraphicsUnit.Pixel);
+            }
+            newline = newline + 60;
+
+            StringFormat formt0 = new StringFormat();
+            StringFormat formt3 = new StringFormat();
+            SolidBrush color = new SolidBrush(Color.Black);
+            formt3 = new StringFormat(StringFormatFlags.DirectionVertical);
+            formt0 = new StringFormat(StringFormatFlags.DirectionRightToLeft);
+            ticket.DrawString("Seasons Frozen, Snacks & Coffe", titulo, color, new Rectangle(0,10,200,200));
+
+            ticket.DrawString("29 calle poninete y 4 avenida sur Barrio Nuevo, contiguo a Colegio Militar Coronel Milton Antonio Andrade.",new Font("Arial", 10, FontStyle.Regular), color,new Rectangle(0, 50,200, 200));
+            ticket.DrawString("FECHA Y HORA:" + DateTime.Now,new Font("Arial", 9, FontStyle.Regular), color,new Rectangle(0, 120,200, 300));
+            ticket.DrawString("MESA: #" + lblMesaNum.Text,new Font("Arial", 9, FontStyle.Regular), color,new Rectangle(0, 155, 200, 250));
+            ticket.DrawString(borde, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 165, 200, 250));
+            ticket.DrawString(">> ORDEN PAGADA <<", new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 180, 200, 250));
+            //ticket.DrawString("PRODUCTO   CNT   P.UNIT   SUBTOTAL", new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 200, 200, 500));
+            ticket.DrawString("SUBTOTAL: " + lblSubTotal.Text, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 200, 200, 250));
+            ticket.DrawString("PROPINA: " + lblPropina.Text, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 220, 200, 250));
+
+            ticket.DrawString("TOTAL A PAGAR: "+lblTotal.Text, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 240, 200, 250));
+            ticket.DrawString(borde, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 260, 200, 250));
+            ticket.DrawString("Gracias por preferirnos", new Font("Arial", 10, FontStyle.Regular), color, new Rectangle(0, 280, 200, 200));
+
+
+
+            //if (dgvMenu.CurrentCell.ColumnIndex == 3)
+            //{
+            //    objetoOrden.Nombre = Convert.ToString(dgvMenu.Rows[dgvMenu.CurrentRow.Index].Cells[0].Value);
+            //    objetoOrden.Cantidad = Convert.ToInt32(nudCantidad.Value);
+            //    objetoOrden.Precio = Convert.ToDecimal(dgvMenu.Rows[dgvMenu.CurrentRow.Index].Cells[2].Value);
+            //    objetoOrden.Subtotal = objetoOrden.Cantidad * objetoOrden.Precio;
+            //    listaOrden.Add(objetoOrden);
+            //}
+            //foreach (DataGridViewRow row in dgvOrden.Rows)
+            //{
+            //    ticket.DrawString(
+            //        dgvOrden.Rows[0].Cells[0].Value+" "+
+            //        dgvOrden.Rows[0].Cells[1].Value + " "+
+            //        dgvOrden.Rows[0].Cells[2].Value+" "+
+            //        dgvOrden.Rows[0].Cells[3].Value, new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 300, 200, 250));
+            //}
+
+
+            //for (int i = 0; i < dgvOrden.Rows.Count; i++)
+            //{
+            //    for (int j = 0; j < 4; j++)
+            //    {
+            //        if (i == 0)
+            //            ticket.DrawString(dgvOrden.Rows[0].Cells[j].Value.ToString(), new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 300, 200, 250));
+            //        else
+            //            ticket.DrawString(dgvOrden.Rows[0].Cells[j].Value.ToString(), new Font("Arial", 9, FontStyle.Regular), color, new Rectangle(0, 300, 200, 250));
+            //    }
+
+            //    y += 26;
+            //}
+
+
+
         }
+
+
     }
 }

@@ -66,6 +66,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
             this.pcbBackupRecovery.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBackupRecovery.TabIndex = 1;
             this.pcbBackupRecovery.TabStop = false;
+            this.pcbBackupRecovery.Click += new System.EventHandler(this.pcbBackupRecovery_Click);
             // 
             // lblMesasPropina
             // 

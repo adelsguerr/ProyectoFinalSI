@@ -21,8 +21,12 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
         {
             ventanaMesaPropina a = new ventanaMesaPropina();
             a.Show();
+        }
 
-
+        private void pcbBackupRecovery_Click(object sender, EventArgs e)
+        {
+            ventanaBackupRecuperacion b = new ventanaBackupRecuperacion();
+            b.Show();
         }
     }
 }
