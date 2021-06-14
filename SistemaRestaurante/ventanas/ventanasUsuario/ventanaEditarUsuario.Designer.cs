@@ -46,26 +46,28 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.help = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // txtPassword2
             // 
-            this.txtPassword2.Location = new System.Drawing.Point(263, 267);
-            this.txtPassword2.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtPassword2, "Repita su nueva contraseña");
+            this.txtPassword2.Location = new System.Drawing.Point(197, 217);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
-            this.txtPassword2.Size = new System.Drawing.Size(132, 22);
+            this.help.SetShowHelp(this.txtPassword2, true);
+            this.txtPassword2.Size = new System.Drawing.Size(100, 20);
             this.txtPassword2.TabIndex = 23;
             this.txtPassword2.UseSystemPasswordChar = true;
             // 
             // txtPassword1
             // 
-            this.txtPassword1.Location = new System.Drawing.Point(121, 267);
-            this.txtPassword1.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtPassword1, "Nueva  Contraseña");
+            this.txtPassword1.Location = new System.Drawing.Point(91, 217);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(132, 22);
+            this.help.SetShowHelp(this.txtPassword1, true);
+            this.txtPassword1.Size = new System.Drawing.Size(100, 20);
             this.txtPassword1.TabIndex = 24;
             this.txtPassword1.UseSystemPasswordChar = true;
             // 
@@ -77,18 +79,16 @@
             "Mesero",
             "Cajero",
             "Gerente"});
-            this.cmbPuesto.Location = new System.Drawing.Point(121, 183);
-            this.cmbPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbPuesto.Location = new System.Drawing.Point(91, 149);
             this.cmbPuesto.Name = "cmbPuesto";
-            this.cmbPuesto.Size = new System.Drawing.Size(231, 24);
+            this.cmbPuesto.Size = new System.Drawing.Size(174, 21);
             this.cmbPuesto.TabIndex = 22;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(457, 320);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(343, 260);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(100, 28);
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 21;
             this.btnSalir.Text = "Cancelar";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -96,10 +96,9 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(349, 320);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Location = new System.Drawing.Point(262, 260);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 28);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 20;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -108,125 +107,119 @@
             // chkAdministrador
             // 
             this.chkAdministrador.AutoSize = true;
-            this.chkAdministrador.Location = new System.Drawing.Point(121, 230);
-            this.chkAdministrador.Margin = new System.Windows.Forms.Padding(4);
+            this.chkAdministrador.Location = new System.Drawing.Point(91, 187);
             this.chkAdministrador.Name = "chkAdministrador";
-            this.chkAdministrador.Size = new System.Drawing.Size(18, 17);
+            this.chkAdministrador.Size = new System.Drawing.Size(15, 14);
             this.chkAdministrador.TabIndex = 19;
             this.chkAdministrador.UseVisualStyleBackColor = true;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(121, 105);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtDireccion, "Nueva dirección");
+            this.txtDireccion.Location = new System.Drawing.Point(91, 85);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(435, 22);
+            this.help.SetShowHelp(this.txtDireccion, true);
+            this.txtDireccion.Size = new System.Drawing.Size(327, 20);
             this.txtDireccion.TabIndex = 18;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(121, 65);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtTelefono, "Nuevo Numéro");
+            this.txtTelefono.Location = new System.Drawing.Point(91, 53);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(132, 22);
+            this.help.SetShowHelp(this.txtTelefono, true);
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
             this.txtTelefono.TabIndex = 17;
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtNombre
             // 
-            this.helpProvider1.SetHelpString(this.txtNombre, "Acá debe ingresar su nombre");
-            this.txtNombre.Location = new System.Drawing.Point(121, 26);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtNombre, "Nuevo nombre a guardar");
+            this.txtNombre.Location = new System.Drawing.Point(91, 21);
             this.txtNombre.Name = "txtNombre";
-            this.helpProvider1.SetShowHelp(this.txtNombre, true);
-            this.txtNombre.Size = new System.Drawing.Size(308, 22);
+            this.help.SetShowHelp(this.txtNombre, true);
+            this.txtNombre.Size = new System.Drawing.Size(232, 20);
             this.txtNombre.TabIndex = 16;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Location = new System.Drawing.Point(16, 222);
-            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdministrador.Location = new System.Drawing.Point(12, 180);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(95, 34);
+            this.lblAdministrador.Size = new System.Drawing.Size(70, 26);
             this.lblAdministrador.TabIndex = 10;
             this.lblAdministrador.Text = "Administrador\r\nde sistema\r\n";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(16, 271);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(12, 220);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(81, 17);
+            this.lblPassword.Size = new System.Drawing.Size(61, 13);
             this.lblPassword.TabIndex = 11;
             this.lblPassword.Text = "Contraseña";
             // 
             // lblPuesto
             // 
             this.lblPuesto.AutoSize = true;
-            this.lblPuesto.Location = new System.Drawing.Point(16, 187);
-            this.lblPuesto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPuesto.Location = new System.Drawing.Point(12, 152);
             this.lblPuesto.Name = "lblPuesto";
-            this.lblPuesto.Size = new System.Drawing.Size(52, 17);
+            this.lblPuesto.Size = new System.Drawing.Size(40, 13);
             this.lblPuesto.TabIndex = 12;
             this.lblPuesto.Text = "Puesto";
             // 
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(16, 108);
-            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDireccion.Location = new System.Drawing.Point(12, 88);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(67, 17);
+            this.lblDireccion.Size = new System.Drawing.Size(52, 13);
             this.lblDireccion.TabIndex = 13;
             this.lblDireccion.Text = "Dirección";
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(16, 69);
-            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefono.Location = new System.Drawing.Point(12, 56);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(64, 17);
+            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
             this.lblTelefono.TabIndex = 14;
             this.lblTelefono.Text = "Teléfono";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(16, 30);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(12, 24);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(58, 17);
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 15;
             this.lblNombre.Text = "Nombre";
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(121, 145);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.help.SetHelpString(this.txtCorreo, "Nuevo correo");
+            this.txtCorreo.Location = new System.Drawing.Point(91, 118);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(231, 22);
+            this.help.SetShowHelp(this.txtCorreo, true);
+            this.txtCorreo.Size = new System.Drawing.Size(174, 20);
             this.txtCorreo.TabIndex = 25;
             // 
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(16, 148);
-            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCorreo.Location = new System.Drawing.Point(12, 120);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(51, 17);
+            this.lblCorreo.Size = new System.Drawing.Size(38, 13);
             this.lblCorreo.TabIndex = 26;
             this.lblCorreo.Text = "Correo";
             // 
             // ventanaEditarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(587, 367);
+            this.ClientSize = new System.Drawing.Size(440, 298);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtPassword2);
@@ -247,7 +240,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaEditarUsuario";
@@ -276,6 +268,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblCorreo;
-        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.HelpProvider help;
     }
 }
