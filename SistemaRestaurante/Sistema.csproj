@@ -95,6 +95,12 @@
     <Compile Include="Clases\claseUsuarios.cs" />
     <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="Comandas.cs" />
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.Designer.cs">
+      <DependentUpon>ventanaBackupRecuperacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <Compile Include="ventanas\ventanasUsuario\ventanaUsuario.Designer.cs">
       <DependentUpon>ventanaUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.resx">
+      <DependentUpon>ventanaBackupRecuperacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.resx">
       <DependentUpon>ventanaMesaPropina.cs</DependentUpon>
     </EmbeddedResource>

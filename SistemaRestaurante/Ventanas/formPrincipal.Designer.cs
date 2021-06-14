@@ -33,9 +33,9 @@
             this.btnMesas = new System.Windows.Forms.ToolStripButton();
             this.btnMenu = new System.Windows.Forms.ToolStripButton();
             this.btnUsuario = new System.Windows.Forms.ToolStripButton();
-            this.btnAdmin = new System.Windows.Forms.ToolStripButton();
             this.tsrExit = new System.Windows.Forms.ToolStripButton();
             this.tsrChangeUser = new System.Windows.Forms.ToolStripButton();
+            this.btnAdmin = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.btnMesas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMesas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMesas.Name = "btnMesas";
-            this.btnMesas.Size = new System.Drawing.Size(196, 100);
+            this.btnMesas.Size = new System.Drawing.Size(150, 100);
             this.btnMesas.Text = "Mesas";
             this.btnMesas.Click += new System.EventHandler(this.tsrTable_Click);
             // 
@@ -78,7 +78,7 @@
             this.btnMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(196, 100);
+            this.btnMenu.Size = new System.Drawing.Size(150, 100);
             this.btnMenu.Text = "Menú";
             this.btnMenu.Click += new System.EventHandler(this.tsrMenu_Click);
             // 
@@ -90,22 +90,9 @@
             this.btnUsuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(196, 100);
+            this.btnUsuario.Size = new System.Drawing.Size(150, 100);
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.Click += new System.EventHandler(this.tsrUser_Click);
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.AutoSize = false;
-            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
-            this.btnAdmin.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnAdmin.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(196, 100);
-            this.btnAdmin.Text = "Administración";
-            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdmin.Click += new System.EventHandler(this.tsrAdmin_Click);
             // 
             // tsrExit
             // 
@@ -132,6 +119,20 @@
             this.tsrChangeUser.Text = "Cambiar de Usuario";
             this.tsrChangeUser.Click += new System.EventHandler(this.tsrChangeUser_Click);
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.AutoSize = false;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
+            this.btnAdmin.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAdmin.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAdmin.Size = new System.Drawing.Size(196, 100);
+            this.btnAdmin.Text = "Administración";
+            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdmin.Click += new System.EventHandler(this.tsrAdmin_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -151,7 +152,7 @@
             this.ClientSize = new System.Drawing.Size(1192, 629);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
