@@ -54,7 +54,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(894, 63);
+            this.toolStrip1.Size = new System.Drawing.Size(1192, 63);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -110,7 +110,7 @@
             this.tsrExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsrExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsrExit.Name = "tsrExit";
-            this.tsrExit.Size = new System.Drawing.Size(144, 60);
+            this.tsrExit.Size = new System.Drawing.Size(171, 60);
             this.tsrExit.Text = "Salir del Sistema";
             this.tsrExit.Click += new System.EventHandler(this.tsrExit_Click);
             // 
@@ -122,34 +122,35 @@
             this.tsrChangeUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsrChangeUser.Name = "tsrChangeUser";
             this.tsrChangeUser.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.tsrChangeUser.Size = new System.Drawing.Size(168, 60);
+            this.tsrChangeUser.Size = new System.Drawing.Size(197, 60);
             this.tsrChangeUser.Text = "Cambiar de Usuario";
             this.tsrChangeUser.Click += new System.EventHandler(this.tsrChangeUser_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 489);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(894, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1192, 22);
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // formPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(894, 511);
+            this.ClientSize = new System.Drawing.Size(1192, 629);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "formPrincipal";
-            this.Text = "Sistema Restaurante";
+            this.Text = "Sistema Restaurante v1.1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.toolStrip1.ResumeLayout(false);

@@ -17,7 +17,7 @@ namespace Proyecto_Final_Periodo3.ventanas
         private string[] password;
         private bool[] administrador;
         private formPrincipal formulario1;
-        
+
         public ventanaLogueo(formPrincipal f)
         {
             InitializeComponent();
