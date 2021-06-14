@@ -9,7 +9,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
         ventanasUsuario.ventanaUsuario ventanaUsuarios = new ventanaUsuario();
         private Clases.claseUsuarios objetoUsuarios = new Clases.claseUsuarios();
         private Clases.Validaciones val = new Clases.Validaciones();
-        public agregarUsuario(ventanas.ventanasUsuario.ventanaUsuario vUsuarios)
+        public agregarUsuario(ventanaUsuario vUsuarios)
         {
 
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
                     {
                         if (!validacion(txtCorreo.Text))
                         {
-                            MessageBox.Show("Correo Invalido", "Use el siguiente Formato: Nombre@dominio.com");
+                            MessageBox.Show("Correo Invalido", "Use el siguiente Formato: nombre@dominio.com");
                         }
                         else
                         {
