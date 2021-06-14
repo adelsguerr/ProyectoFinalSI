@@ -18,11 +18,7 @@ namespace Proyecto_Final_Periodo3.ventanas
         private bool[] administrador;
         private formPrincipal formulario1;
 
-        public ventanaLogueo(formPrincipal f)
-        {
-            InitializeComponent();
-            formulario1 = f;
-        }
+       
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -55,6 +51,9 @@ namespace Proyecto_Final_Periodo3.ventanas
                     formulario1.botonesAdministrador(administrador[index]);
 
                     this.Close();
+
+                    formPrincipal frm = new formPrincipal();
+                    frm.Show();
                 }
                 else if (txtPassword.Text == "")
                 {

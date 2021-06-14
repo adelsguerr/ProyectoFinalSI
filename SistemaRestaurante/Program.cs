@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final_Periodo3.ventanas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Proyecto_Final_Periodo3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formPrincipal());
+            Application.Run(new ventanaLogueo()) ;
         }
     }
 }

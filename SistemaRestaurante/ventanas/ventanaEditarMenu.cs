@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -30,43 +31,49 @@ namespace Proyecto_Final_Periodo3.ventanas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
+            try
             {
-                MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
+                {
+                    MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (!validacion(txtPrecio.Text))
+                    {
+                        MessageBox.Show("Sólo se admiten números", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        objetoMenu.Nombre = txtNombre.Text;
+                        objetoMenu.Tipo = cmbTipo.Text;
+                        objetoMenu.Precio = txtPrecio.Text;
+
+                        ventanaMenu.actualizarEdicion(objetoMenu);
+                        this.Close();
+
+                    }
+
+
+                }
             }
-            else
+            catch (Exception)
             {
-                objetoMenu.Nombre = txtNombre.Text;
-                objetoMenu.Tipo = cmbTipo.Text;
-                objetoMenu.Precio = txtPrecio.Text;
 
-                ventanaMenu.actualizarEdicion(objetoMenu);
-
+                throw;
             }
-            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
-        private void txtPrecio_Leave(object sender, EventArgs e)
+        public static bool validacion(string precio)
         {
-            try
-            {
-                double i = Convert.ToDouble(txtPrecio.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Ingrese un precio correcto", "Error de precio", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+            Regex rx = new Regex(
+            @"^([1-9][0-9]{,2}(,[0-9]{3})*|[0-9]+)(.[0-9]{1,9})?$");
+            return rx.IsMatch(precio);
 
-        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            val.precio(txtPrecio, e);
         }
     }
 }

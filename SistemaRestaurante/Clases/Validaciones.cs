@@ -51,26 +51,5 @@ namespace Proyecto_Final_Periodo3.Clases
                 MessageBox.Show("Solo se permiten números", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        public void precio(TextBox txt, KeyPressEventArgs e)
-        {
-            if (char.IsNumber(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (char.IsPunctuation(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if(char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten números", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
     }
 }

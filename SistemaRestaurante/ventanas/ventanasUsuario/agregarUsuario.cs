@@ -40,7 +40,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
                     {
                         if (!validacion(txtCorreo.Text))
                         {
-                            MessageBox.Show("Correo Invalido", "Use el siguiente Formato: nombre@dominio.com");
+                            MessageBox.Show("Use el siguiente Formato: nombre@dominio.com", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                         else
                         {
@@ -104,17 +104,5 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasUsuario
             val.SoloNumeros(txtTelefono, e);
         }
 
-
-        //private void Verificacion_Click(object sender, EventArgs e)
-        //{
-        //    if (validacion(TxtCorrero.Text))
-        //    {
-        //        MessageBox.Show("Correo Valido", "Su Correo es valido");
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Correo Invalido", "Use el siguiente Formato: Nombre@dominio.com");
-        //    }
-        //}
     }
 }

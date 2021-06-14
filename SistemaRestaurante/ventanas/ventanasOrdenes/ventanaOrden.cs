@@ -175,11 +175,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
                     ventanaO.colorear();
                     Close();
                 }
-
-
             }
-
-
         }
 
 

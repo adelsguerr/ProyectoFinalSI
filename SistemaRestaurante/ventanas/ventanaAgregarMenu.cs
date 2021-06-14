@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -23,27 +24,41 @@ namespace Proyecto_Final_Periodo3.ventanas
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
+            try
             {
-                MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (txtPrecio.Text == "" || txtNombre.Text == "" || cmbTipo.Text == "")
+                {
+                    MessageBox.Show("Los datos no están completos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (!validacion(txtPrecio.Text))
+                    {
+                        MessageBox.Show("Sólo se admiten números", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        objetoMenu.Nombre = txtNombre.Text;
+                        objetoMenu.Tipo = cmbTipo.Text;
+                        objetoMenu.Precio = txtPrecio.Text;
+
+                        ventanaMenu.actualizarGuardado(objetoMenu);
+
+                        txtNombre.Text = "";
+                        txtPrecio.Text = "";
+                        cmbTipo.SelectedIndex = -1;
+                        this.Close();
+                    }
+
+
+                }
             }
-            //else if (Convert.ToDecimal(txtPrecio)<=0)
-            //{
-            //    MessageBox.Show("El precio debe ser monetario", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            else
+            catch (Exception)
             {
-                objetoMenu.Nombre = txtNombre.Text;
-                objetoMenu.Tipo = cmbTipo.Text;
-                objetoMenu.Precio = txtPrecio.Text;
 
-                ventanaMenu.actualizarGuardado(objetoMenu);
-
-                txtNombre.Text = "";
-                txtPrecio.Text = "";
-                cmbTipo.SelectedIndex = -1;
-                this.Close();
+                throw;
             }
+            
         }
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -61,10 +76,12 @@ namespace Proyecto_Final_Periodo3.ventanas
                 MessageBox.Show("Ingrese un precio correcto", "Error de precio", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        public static bool validacion(string precio)
         {
-            val.precio(txtPrecio, e);
+            Regex rx = new Regex(
+            @"^([1-9][0-9]{,2}(,[0-9]{3})*|[0-9]+)(.[0-9]{1,9})?$");
+            return rx.IsMatch(precio);
+
         }
     }
 }
