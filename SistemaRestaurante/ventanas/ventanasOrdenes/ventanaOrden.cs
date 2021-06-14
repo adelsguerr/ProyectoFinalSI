@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using System.Drawing.Printing;
-using System.IO;
+using System.Drawing;
 
 namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 {
@@ -19,10 +12,10 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
         Clases.claseManejoArchivo archivoOrden = new Clases.claseManejoArchivo();
         Clases.claseManejoArchivo archivoMesas = new Clases.claseManejoArchivo();
         Orden ventanaO;
+        
+        
 
-        //public const string TotalMayorDeCeroMessage = "Es mayor a 0";
-        //public const string TotalMenorDeCeroMessage = "Error, El total es menor a 0";
-        public ventanaOrden(int num,Orden v)
+        public ventanaOrden(int num,Orden v) 
         {
             InitializeComponent();
             lblMesaNum.Text = Convert.ToString(num);
@@ -113,20 +106,8 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 
         public static decimal Venta(decimal total, decimal propina)
         {
-            //decimal subtotal = (propina * total) / 100;
-            decimal subtotal = (total) / 100;
+            decimal subtotal = (propina * total) / 100;
             decimal ventaTotal = total + subtotal;
-
-            //if (ventaTotal > 0)
-            //{
-            //    MessageBox.Show("Venta de $" + ventaTotal, TotalMayorDeCeroMessage);
-            //}
-
-            //if (ventaTotal < 0)
-            //{
-            //    throw new ArgumentOutOfRangeException("Venta", ventaTotal, TotalMenorDeCeroMessage);
-            //}
-
             return decimal.Round(ventaTotal, 2);
         }
 
@@ -168,32 +149,34 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
                 DialogResult dialogR = MessageBox.Show("¿El cliente pagará la cuenta?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(dialogR == DialogResult.Yes)
                 {
-                    MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ImprimirTicket();
+                   
+                    MessageBox.Show("La cuenta es de " + lblTotal.Text, "Total", MessageBoxButtons.OK, MessageBoxIcon.Information);                   
                     listaOrden.Clear();
                     archivoOrden.guardarOrden(listaOrden,Convert.ToInt32(lblMesaNum.Text));
                     ventanaO.colorear();
+                    printDocument1 = new PrintDocument();
+                    PrinterSettings ps = new PrinterSettings();
+                    printDocument1.PrinterSettings = ps;
+                    printDocument1.PrintPage += Imprimir;
+                    printDocument1.Print();
                     Close();
                 }
             }
         }
 
-
-        private void ImprimirTicket()
+        private void Imprimir(object sender, PrintPageEventArgs e)
         {
-            ////for (int i = 0; i < dgvOrden.Rows.Count; i++)
-            ////{
-            ////    total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
-            ////}
-            //dgvOrden.DataSource = listaOrden;
-            ////var dt = new DataTable();
-            //var ticket = new Ticket.TicketVenta();
-            //ticket.DataSource = listaOrden;
-            //ticket.tblOrdenProductos.DataSource = listaOrden;
-            //rptTickets.Report = ticket;
-            //rptTickets.RefreshReport();
-
-            
+            Bitmap logo;
+            logo = new Bitmap(Properties.Resources.seasons_logo);
+            Font font = new Font("Arial", 12);
+            int ancho = 550;
+            int largo = 20;
+            float x= 0.4f;
+            float y = 0f;
+            e.Graphics.DrawImage(logo, x, y, 6.6f, 2.5f);
+            e.Graphics.DrawString("29 calle Poniente y 4° avenida sur Barrio Nuevo contiguo a Colegio Militar Coronel Milton Antonio Andrade. Santa Ana, Santa Ana.",font,Brushes.Black,new RectangleF(0f, 2.5f, 7.6f, 2.3f));
         }
+
+
     }
 }

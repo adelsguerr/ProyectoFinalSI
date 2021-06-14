@@ -41,7 +41,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblPropina = new System.Windows.Forms.Label();
             this.lblPalabraPropina = new System.Windows.Forms.Label();
@@ -49,10 +48,12 @@
             this.lblPalabraSubTotal = new System.Windows.Forms.Label();
             this.lblMesaNum = new System.Windows.Forms.Label();
             this.lblMesaTexto = new System.Windows.Forms.Label();
-            this.btbCerrar = new System.Windows.Forms.Button();
-            this.btnCobrar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblPalabraTotal = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btbCerrar = new System.Windows.Forms.Button();
+            this.btnCobrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -249,20 +250,6 @@
             0,
             0});
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(9, 106);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(78, 119);
-            this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "Eliminar\r\nplato";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lblPropina);
@@ -352,6 +339,48 @@
             this.lblMesaTexto.TabIndex = 2;
             this.lblMesaTexto.Text = "Mesa número";
             // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(623, 38);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(76, 29);
+            this.lblTotal.TabIndex = 0;
+            this.lblTotal.Text = "$0.00";
+            // 
+            // lblPalabraTotal
+            // 
+            this.lblPalabraTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPalabraTotal.AutoSize = true;
+            this.lblPalabraTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPalabraTotal.Location = new System.Drawing.Point(521, 37);
+            this.lblPalabraTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPalabraTotal.Name = "lblPalabraTotal";
+            this.lblPalabraTotal.Size = new System.Drawing.Size(73, 29);
+            this.lblPalabraTotal.TabIndex = 0;
+            this.lblPalabraTotal.Text = "Total";
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.Imprimir);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEliminar.Location = new System.Drawing.Point(9, 106);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(78, 119);
+            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.Text = "Eliminar\r\nplato";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // btbCerrar
             // 
             this.btbCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btbCerrar.Image")));
@@ -379,30 +408,6 @@
             this.btnCobrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCobrar.UseVisualStyleBackColor = true;
             this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(623, 38);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(76, 29);
-            this.lblTotal.TabIndex = 0;
-            this.lblTotal.Text = "$0.00";
-            // 
-            // lblPalabraTotal
-            // 
-            this.lblPalabraTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPalabraTotal.AutoSize = true;
-            this.lblPalabraTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPalabraTotal.Location = new System.Drawing.Point(521, 37);
-            this.lblPalabraTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPalabraTotal.Name = "lblPalabraTotal";
-            this.lblPalabraTotal.Size = new System.Drawing.Size(73, 29);
-            this.lblPalabraTotal.TabIndex = 0;
-            this.lblPalabraTotal.Text = "Total";
             // 
             // ventanaOrden
             // 
@@ -461,5 +466,6 @@
         private System.Windows.Forms.Label lblSubTotal;
         private System.Windows.Forms.Label lblPalabraSubTotal;
         private System.Windows.Forms.Panel panel4;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

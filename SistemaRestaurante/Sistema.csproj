@@ -84,8 +84,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telerik.Reporting, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
-    <Reference Include="Telerik.ReportViewer.WinForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\claseMenu.cs" />
@@ -115,12 +113,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ticket\TicketVenta.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Ticket\TicketVenta.Designer.cs">
-      <DependentUpon>TicketVenta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ventanas\ventanasMenu\ventanaAgregarMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,9 +193,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Ticket\TicketVenta.resx">
-      <DependentUpon>TicketVenta.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ventanas\ventanasMenu\ventanaAgregarMenu.resx">
       <DependentUpon>ventanaAgregarMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +248,7 @@
     <Content Include="Imgs\Cancel.png" />
     <None Include="Imgs\logo.png" />
     <None Include="Imgs\logo2.ico" />
+    <Content Include="Imgs\seasons-logo.jpg" />
     <Content Include="logo2.ico" />
     <None Include="Imgs\chngUser.png" />
     <Content Include="Imgs\Eat.png">
@@ -315,6 +305,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Ticket\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

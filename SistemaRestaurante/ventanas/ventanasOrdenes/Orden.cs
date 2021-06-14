@@ -66,7 +66,7 @@ namespace Proyecto_Final_Periodo3
         {
             Button boton = (Button)sender;
             Bitmap imagenMesa;
-            imagenMesa = new Bitmap(Proyecto_Final_Periodo3.Properties.Resources.OccupiedTable);
+            imagenMesa = new Bitmap(Properties.Resources.OccupiedTable);
             boton.Image = imagenMesa;
 
             bool bandera = true;

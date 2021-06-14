@@ -1,5 +1,6 @@
 ﻿using Proyecto_Final_Periodo3.ventanas;
 using Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion;
+using Proyecto_Final_Periodo3.ventanas.ventanasOrdenes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Proyecto_Final_Periodo3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            ventanaLogueo main = new ventanaLogueo();
+            formPrincipal main = new formPrincipal();
             main.FormClosed += MainForm_Closed;
             main.Show();
             Application.Run();
