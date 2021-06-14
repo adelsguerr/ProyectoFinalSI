@@ -12,9 +12,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Proyecto_Final_Periodo3
 {
-    public partial class Configuracion : Form
+    public partial class ventanaMesaPropina : Form
     {
-        public Configuracion()
+        public ventanaMesaPropina()
         {
             InitializeComponent();
         }
@@ -73,9 +73,9 @@ namespace Proyecto_Final_Periodo3
         {
             try
             {
-                File.Delete("configuracion.dat");
+                File.Delete("ventanaMesaPropina.dat");
                 BinaryFormatter formatter = new BinaryFormatter();
-                FileStream fs = new FileStream("configuracion.dat", FileMode.Create, FileAccess.Write);
+                FileStream fs = new FileStream("ventanaMesaPropina.dat", FileMode.Create, FileAccess.Write);
                 formatter.Serialize(fs, mesa);
                 fs.Close();
                 return true;

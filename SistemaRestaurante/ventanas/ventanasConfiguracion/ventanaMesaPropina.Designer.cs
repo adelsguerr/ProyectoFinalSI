@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final_Periodo3
 {
-    partial class Configuracion
+    partial class ventanaMesaPropina
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuracion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaMesaPropina));
             this.lblNumberTable = new System.Windows.Forms.Label();
             this.nudNumberTable = new System.Windows.Forms.NumericUpDown();
             this.lblTip = new System.Windows.Forms.Label();
@@ -45,26 +45,25 @@
             // lblNumberTable
             // 
             this.lblNumberTable.AutoSize = true;
-            this.lblNumberTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberTable.Location = new System.Drawing.Point(18, 41);
-            this.lblNumberTable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumberTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberTable.Location = new System.Drawing.Point(58, 103);
             this.lblNumberTable.Name = "lblNumberTable";
-            this.lblNumberTable.Size = new System.Drawing.Size(138, 20);
+            this.lblNumberTable.Size = new System.Drawing.Size(331, 44);
             this.lblNumberTable.TabIndex = 0;
             this.lblNumberTable.Text = "Número de mesas";
             // 
             // nudNumberTable
             // 
-            this.nudNumberTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudNumberTable.Location = new System.Drawing.Point(176, 39);
-            this.nudNumberTable.Margin = new System.Windows.Forms.Padding(2);
+            this.nudNumberTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudNumberTable.Location = new System.Drawing.Point(453, 103);
+            this.nudNumberTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudNumberTable.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nudNumberTable.Name = "nudNumberTable";
-            this.nudNumberTable.Size = new System.Drawing.Size(38, 26);
+            this.nudNumberTable.Size = new System.Drawing.Size(51, 49);
             this.nudNumberTable.TabIndex = 1;
             this.nudNumberTable.Value = new decimal(new int[] {
             1,
@@ -75,29 +74,29 @@
             // lblTip
             // 
             this.lblTip.AutoSize = true;
-            this.lblTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTip.Location = new System.Drawing.Point(18, 83);
-            this.lblTip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTip.Location = new System.Drawing.Point(159, 160);
             this.lblTip.Name = "lblTip";
-            this.lblTip.Size = new System.Drawing.Size(91, 20);
+            this.lblTip.Size = new System.Drawing.Size(230, 46);
             this.lblTip.TabIndex = 2;
             this.lblTip.Text = "Propina (%)";
             // 
             // nudTip
             // 
-            this.nudTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudTip.Location = new System.Drawing.Point(176, 83);
-            this.nudTip.Margin = new System.Windows.Forms.Padding(2);
+            this.nudTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudTip.Location = new System.Drawing.Point(453, 157);
+            this.nudTip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudTip.Name = "nudTip";
-            this.nudTip.Size = new System.Drawing.Size(38, 26);
+            this.nudTip.Size = new System.Drawing.Size(51, 49);
             this.nudTip.TabIndex = 3;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(43, 139);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(108, 323);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(66, 24);
+            this.btnRefresh.Size = new System.Drawing.Size(143, 58);
             this.btnRefresh.TabIndex = 8;
             this.btnRefresh.Text = "Actualizar";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -105,10 +104,11 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(142, 139);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(361, 323);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(61, 24);
+            this.btnExit.Size = new System.Drawing.Size(143, 58);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -120,10 +120,10 @@
             // 
             // Configuracion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(248, 174);
+            this.ClientSize = new System.Drawing.Size(620, 419);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.nudTip);
@@ -132,7 +132,7 @@
             this.Controls.Add(this.lblNumberTable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Configuracion";

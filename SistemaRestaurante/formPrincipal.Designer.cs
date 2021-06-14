@@ -48,57 +48,61 @@
             this.btnMesas,
             this.btnMenu,
             this.btnUsuario,
-            this.btnAdmin,
             this.tsrExit,
-            this.tsrChangeUser});
+            this.tsrChangeUser,
+            this.btnAdmin});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(1192, 63);
+            this.toolStrip1.Size = new System.Drawing.Size(1192, 103);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnMesas
             // 
             this.btnMesas.AutoSize = false;
+            this.btnMesas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesas.Image = global::Proyecto_Final_Periodo3.Properties.Resources.Selection;
             this.btnMesas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMesas.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMesas.Name = "btnMesas";
-            this.btnMesas.Size = new System.Drawing.Size(120, 60);
+            this.btnMesas.Size = new System.Drawing.Size(196, 100);
             this.btnMesas.Text = "Mesas";
             this.btnMesas.Click += new System.EventHandler(this.tsrTable_Click);
             // 
             // btnMenu
             // 
             this.btnMenu.AutoSize = false;
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(120, 60);
+            this.btnMenu.Size = new System.Drawing.Size(196, 100);
             this.btnMenu.Text = "Menú";
             this.btnMenu.Click += new System.EventHandler(this.tsrMenu_Click);
             // 
             // btnUsuario
             // 
             this.btnUsuario.AutoSize = false;
+            this.btnUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuario.Image")));
             this.btnUsuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnUsuario.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(120, 60);
+            this.btnUsuario.Size = new System.Drawing.Size(196, 100);
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.Click += new System.EventHandler(this.tsrUser_Click);
             // 
             // btnAdmin
             // 
             this.btnAdmin.AutoSize = false;
+            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
             this.btnAdmin.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnAdmin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(160, 60);
+            this.btnAdmin.Size = new System.Drawing.Size(196, 100);
             this.btnAdmin.Text = "Administración";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdmin.Click += new System.EventHandler(this.tsrAdmin_Click);
@@ -106,23 +110,25 @@
             // tsrExit
             // 
             this.tsrExit.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsrExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsrExit.Image = ((System.Drawing.Image)(resources.GetObject("tsrExit.Image")));
             this.tsrExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsrExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsrExit.Name = "tsrExit";
-            this.tsrExit.Size = new System.Drawing.Size(171, 60);
+            this.tsrExit.Size = new System.Drawing.Size(207, 100);
             this.tsrExit.Text = "Salir del Sistema";
             this.tsrExit.Click += new System.EventHandler(this.tsrExit_Click);
             // 
             // tsrChangeUser
             // 
             this.tsrChangeUser.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsrChangeUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsrChangeUser.Image = ((System.Drawing.Image)(resources.GetObject("tsrChangeUser.Image")));
             this.tsrChangeUser.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsrChangeUser.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsrChangeUser.Name = "tsrChangeUser";
             this.tsrChangeUser.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.tsrChangeUser.Size = new System.Drawing.Size(197, 60);
+            this.tsrChangeUser.Size = new System.Drawing.Size(241, 100);
             this.tsrChangeUser.Text = "Cambiar de Usuario";
             this.tsrChangeUser.Click += new System.EventHandler(this.tsrChangeUser_Click);
             // 
@@ -148,6 +154,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "formPrincipal";
             this.Text = "Sistema Restaurante v1.1";

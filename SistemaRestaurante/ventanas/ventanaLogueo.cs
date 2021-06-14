@@ -16,9 +16,14 @@ namespace Proyecto_Final_Periodo3.ventanas
         private List<Clases.claseUsuarios> users = new List<Clases.claseUsuarios>();
         private string[] password;
         private bool[] administrador;
-        private formPrincipal formulario1;
 
-       
+        public ventanaLogueo()
+        {
+            CenterToScreen();
+            InitializeComponent();
+        }
+
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -46,14 +51,11 @@ namespace Proyecto_Final_Periodo3.ventanas
             try
             {
                 if (txtPassword.Text == password[index])
-                {
-                    formulario1.Enabled = true;
-                    formulario1.botonesAdministrador(administrador[index]);
-
-                    this.Close();
-
+                {               
                     formPrincipal frm = new formPrincipal();
                     frm.Show();
+                    frm.botonesAdministrador(administrador[index]);
+                    Close();
                 }
                 else if (txtPassword.Text == "")
                 {
@@ -63,6 +65,7 @@ namespace Proyecto_Final_Periodo3.ventanas
                 {
                     MessageBox.Show("La contraseña es incorrecta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
             catch (Exception)
             {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Proyecto_Final_Periodo3.ventanas;
+using Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +21,8 @@ namespace Proyecto_Final_Periodo3
 
         private void Home_Load(object sender, EventArgs e)
         {
-            ventanas.ventanaLogueo logueo = new ventanas.ventanaLogueo(this);
-            this.Enabled = false;
-            logueo.ShowDialog();
-            this.IsMdiContainer = true;
+            //ventanaLogueo logueo = new ventanaLogueo();         
+            //logueo.Close();
         }
 
         private void tsrAdmin_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Proyecto_Final_Periodo3
             bool bandera = true;
             foreach (Form formulario in Application.OpenForms)
             {
-                if (formulario.GetType() == typeof(Configuracion))
+                if (formulario.GetType() == typeof(ventanaConfiguracion))
                 {
                     bandera = false;
                 }
@@ -38,7 +38,7 @@ namespace Proyecto_Final_Periodo3
 
             if (bandera == true)
             {
-                Configuracion config = new Configuracion();
+                ventanaConfiguracion config = new ventanaConfiguracion();
                 config.MdiParent = this;
                 config.Show();
             }
@@ -124,10 +124,10 @@ namespace Proyecto_Final_Periodo3
                 DialogResult respuesta = MessageBox.Show("¿Quiere cambiar de usuario?", "Cambiar de Usuario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (respuesta == DialogResult.Yes)
                 {
-                    ventanas.ventanaLogueo logueo = new ventanas.ventanaLogueo(this);
-                    this.Enabled = false;
-                    logueo.ShowDialog();
-                    this.IsMdiContainer = true;
+                    
+                    ventanaLogueo logueo = new ventanaLogueo();
+                    logueo.Show();
+                    Close();
                 }
                 else if (respuesta == DialogResult.No)
                 { }

@@ -95,11 +95,11 @@
     <Compile Include="Clases\claseUsuarios.cs" />
     <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="Comandas.cs" />
-    <Compile Include="Configuracion.cs">
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuracion.Designer.cs">
-      <DependentUpon>Configuracion.cs</DependentUpon>
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.Designer.cs">
+      <DependentUpon>ventanaMesaPropina.cs</DependentUpon>
     </Compile>
     <Compile Include="formPrincipal.cs">
       <SubType>Form</SubType>
@@ -139,6 +139,12 @@
     <Compile Include="ventanas\ventanaMenu.Designer.cs">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.Designer.cs">
+      <DependentUpon>ventanaConfiguracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanasOrdenes\Orden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,8 +175,8 @@
     <Compile Include="ventanas\ventanasUsuario\ventanaUsuario.Designer.cs">
       <DependentUpon>ventanaUsuario.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Configuracion.resx">
-      <DependentUpon>Configuracion.cs</DependentUpon>
+    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.resx">
+      <DependentUpon>ventanaMesaPropina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formPrincipal.resx">
       <DependentUpon>formPrincipal.cs</DependentUpon>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaMenu.resx">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.resx">
+      <DependentUpon>ventanaConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanasOrdenes\Orden.resx">
       <DependentUpon>Orden.cs</DependentUpon>
