@@ -55,7 +55,7 @@
             // 
             // txtNombre
             // 
-            this.help.SetHelpString(this.txtNombre, "Nombre  del platillo a agregar");
+            this.help.SetHelpString(this.txtNombre, "En este espacio digite el nombre  del platillo a agregar");
             this.txtNombre.Location = new System.Drawing.Point(74, 23);
             this.txtNombre.Name = "txtNombre";
             this.help.SetShowHelp(this.txtNombre, true);
@@ -113,7 +113,7 @@
             // 
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
-            this.help.SetHelpString(this.cmbTipo, "Tipo de platillo a agregar");
+            this.help.SetHelpString(this.cmbTipo, "Acá selecciones el tipo de platillo a agregar");
             this.cmbTipo.Items.AddRange(new object[] {
             "Entrada",
             "Plato fuerte",

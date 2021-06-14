@@ -115,7 +115,7 @@
             // 
             // txtDireccion
             // 
-            this.help.SetHelpString(this.txtDireccion, "Nueva dirección");
+            this.help.SetHelpString(this.txtDireccion, "Acá digite la nueva dirección");
             this.txtDireccion.Location = new System.Drawing.Point(91, 85);
             this.txtDireccion.Name = "txtDireccion";
             this.help.SetShowHelp(this.txtDireccion, true);
@@ -124,7 +124,7 @@
             // 
             // txtTelefono
             // 
-            this.help.SetHelpString(this.txtTelefono, "Nuevo Numéro");
+            this.help.SetHelpString(this.txtTelefono, "Acá coloque el nuevo Numéro");
             this.txtTelefono.Location = new System.Drawing.Point(91, 53);
             this.txtTelefono.Name = "txtTelefono";
             this.help.SetShowHelp(this.txtTelefono, true);
@@ -134,7 +134,7 @@
             // 
             // txtNombre
             // 
-            this.help.SetHelpString(this.txtNombre, "Nuevo nombre a guardar");
+            this.help.SetHelpString(this.txtNombre, "Acá digitara el nuevo nombre a guardar");
             this.txtNombre.Location = new System.Drawing.Point(91, 21);
             this.txtNombre.Name = "txtNombre";
             this.help.SetShowHelp(this.txtNombre, true);
@@ -198,7 +198,7 @@
             // 
             // txtCorreo
             // 
-            this.help.SetHelpString(this.txtCorreo, "Nuevo correo");
+            this.help.SetHelpString(this.txtCorreo, "Campo para el nuevo correo");
             this.txtCorreo.Location = new System.Drawing.Point(91, 118);
             this.txtCorreo.Name = "txtCorreo";
             this.help.SetShowHelp(this.txtCorreo, true);

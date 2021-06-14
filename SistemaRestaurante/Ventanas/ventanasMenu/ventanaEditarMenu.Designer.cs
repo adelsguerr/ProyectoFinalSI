@@ -43,7 +43,7 @@
             // cmbTipo
             // 
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipo.FormatString = "Tipo de platillo qeu desea editar";
+            this.cmbTipo.FormatString = "Acá seleccione el tipo de platillo qeu desea editar";
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Entrada",
@@ -91,7 +91,7 @@
             // 
             // txtNombre
             // 
-            this.help.SetHelpString(this.txtNombre, "Nombre del platillo que desea editar");
+            this.help.SetHelpString(this.txtNombre, "Acá coloque el nuevo nombre del platillo que desea editar");
             this.txtNombre.Location = new System.Drawing.Point(65, 25);
             this.txtNombre.Name = "txtNombre";
             this.help.SetShowHelp(this.txtNombre, true);

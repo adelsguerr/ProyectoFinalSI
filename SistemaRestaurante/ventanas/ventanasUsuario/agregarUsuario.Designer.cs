@@ -97,7 +97,7 @@
             // 
             // txtNombre
             // 
-            this.help.SetHelpString(this.txtNombre, "Nombre del nuevo Usuario");
+            this.help.SetHelpString(this.txtNombre, "Acá digite el nombre del nuevo Usuario");
             this.txtNombre.Location = new System.Drawing.Point(91, 21);
             this.txtNombre.Name = "txtNombre";
             this.help.SetShowHelp(this.txtNombre, true);
@@ -107,7 +107,7 @@
             // 
             // txtTelefono
             // 
-            this.help.SetHelpString(this.txtTelefono, "Numero del nuevo usuario ");
+            this.help.SetHelpString(this.txtTelefono, "Acá coloque el numero del nuevo usuario ");
             this.txtTelefono.Location = new System.Drawing.Point(91, 53);
             this.txtTelefono.Name = "txtTelefono";
             this.help.SetShowHelp(this.txtTelefono, true);
@@ -117,7 +117,7 @@
             // 
             // txtDireccion
             // 
-            this.help.SetHelpString(this.txtDireccion, "Direccion de su residencia");
+            this.help.SetHelpString(this.txtDireccion, "Acá colocara la direccion de su residencia");
             this.txtDireccion.Location = new System.Drawing.Point(91, 85);
             this.txtDireccion.Name = "txtDireccion";
             this.help.SetShowHelp(this.txtDireccion, true);
@@ -127,7 +127,7 @@
             // chkAdministrador
             // 
             this.chkAdministrador.AutoSize = true;
-            this.help.SetHelpString(this.chkAdministrador, "Hacer administrador al nuevo usurio (solo si selecciona la casilla)");
+            this.help.SetHelpString(this.chkAdministrador, "Acá podra hacer administrador al nuevo usurio (solo si selecciona la casilla)");
             this.chkAdministrador.Location = new System.Drawing.Point(91, 187);
             this.chkAdministrador.Name = "chkAdministrador";
             this.help.SetShowHelp(this.chkAdministrador, true);
@@ -161,7 +161,7 @@
             // 
             this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuesto.FormattingEnabled = true;
-            this.help.SetHelpString(this.cmbPuesto, "Cargo a desempeñar");
+            this.help.SetHelpString(this.cmbPuesto, "En este campo seleccioen el cargo a desempeñar");
             this.cmbPuesto.Items.AddRange(new object[] {
             "Mesero",
             "Cajero",
@@ -183,7 +183,7 @@
             // 
             // txtPassword1
             // 
-            this.help.SetHelpString(this.txtPassword1, "Ingrese la contraseña");
+            this.help.SetHelpString(this.txtPassword1, "Aca debe Ingrese la contraseña");
             this.txtPassword1.Location = new System.Drawing.Point(91, 217);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
@@ -194,7 +194,7 @@
             // 
             // txtPassword2
             // 
-            this.help.SetHelpString(this.txtPassword2, "Repita la contraseña");
+            this.help.SetHelpString(this.txtPassword2, "Debe repitir la contraseña");
             this.txtPassword2.Location = new System.Drawing.Point(197, 217);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';

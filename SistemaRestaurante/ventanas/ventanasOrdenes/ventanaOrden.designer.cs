@@ -66,6 +66,14 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
+            // panel4
+            // 
+            panel4.Location = new System.Drawing.Point(2, 188);
+            panel4.Margin = new System.Windows.Forms.Padding(2);
+            panel4.Name = "panel4";
+            panel4.Size = new System.Drawing.Size(70, 249);
+            panel4.TabIndex = 4;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -162,7 +170,7 @@
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipo.FormattingEnabled = true;
-            this.help.SetHelpString(this.cmbTipo, "Categoria de platillos");
+            this.help.SetHelpString(this.cmbTipo, "Estas son las categoria de platillos");
             this.cmbTipo.Items.AddRange(new object[] {
             "Entradas",
             "Platos fuertes",
@@ -206,14 +214,6 @@
             this.panel2.Size = new System.Drawing.Size(76, 438);
             this.panel2.TabIndex = 2;
             // 
-            // panel4
-            // 
-            panel4.Location = new System.Drawing.Point(2, 188);
-            panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            panel4.Name = "panel4";
-            panel4.Size = new System.Drawing.Size(70, 249);
-            panel4.TabIndex = 4;
-            // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
@@ -228,7 +228,7 @@
             // 
             this.nudCantidad.BackColor = System.Drawing.SystemColors.Window;
             this.nudCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.help.SetHelpString(this.nudCantidad, "Cantidad de platillo a agregar");
+            this.help.SetHelpString(this.nudCantidad, "Acá coloque la cantidad de platillo a agregar");
             this.nudCantidad.Location = new System.Drawing.Point(3, 35);
             this.nudCantidad.Minimum = new decimal(new int[] {
             1,
