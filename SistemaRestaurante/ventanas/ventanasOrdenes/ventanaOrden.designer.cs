@@ -38,7 +38,7 @@
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.dgvOrden = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rptTickets = new Telerik.ReportViewer.WinForms.ReportViewer();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -53,7 +53,6 @@
             this.btnCobrar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblPalabraTotal = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -202,7 +201,6 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.rptTickets);
             this.panel2.Controls.Add(this.lblCantidad);
             this.panel2.Controls.Add(this.nudCantidad);
             this.panel2.Controls.Add(this.btnEliminar);
@@ -213,14 +211,12 @@
             this.panel2.Size = new System.Drawing.Size(101, 538);
             this.panel2.TabIndex = 2;
             // 
-            // rptTickets
+            // panel4
             // 
-            this.rptTickets.AccessibilityKeyMap = null;
-            this.rptTickets.Location = new System.Drawing.Point(9, 237);
-            this.rptTickets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rptTickets.Name = "rptTickets";
-            this.rptTickets.Size = new System.Drawing.Size(78, 296);
-            this.rptTickets.TabIndex = 3;
+            this.panel4.Location = new System.Drawing.Point(3, 231);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(93, 306);
+            this.panel4.TabIndex = 4;
             // 
             // lblCantidad
             // 
@@ -408,13 +404,6 @@
             this.lblPalabraTotal.TabIndex = 0;
             this.lblPalabraTotal.Text = "Total";
             // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(3, 231);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(93, 306);
-            this.panel4.TabIndex = 4;
-            // 
             // ventanaOrden
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -471,7 +460,6 @@
         private System.Windows.Forms.Label lblPalabraPropina;
         private System.Windows.Forms.Label lblSubTotal;
         private System.Windows.Forms.Label lblPalabraSubTotal;
-        private Telerik.ReportViewer.WinForms.ReportViewer rptTickets;
         private System.Windows.Forms.Panel panel4;
     }
 }

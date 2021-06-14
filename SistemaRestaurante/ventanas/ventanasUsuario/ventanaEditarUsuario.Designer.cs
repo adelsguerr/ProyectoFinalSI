@@ -46,6 +46,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // txtPassword2
@@ -133,9 +134,11 @@
             // 
             // txtNombre
             // 
+            this.helpProvider1.SetHelpString(this.txtNombre, "Acá debe ingresar su nombre");
             this.txtNombre.Location = new System.Drawing.Point(121, 26);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
+            this.helpProvider1.SetShowHelp(this.txtNombre, true);
             this.txtNombre.Size = new System.Drawing.Size(308, 22);
             this.txtNombre.TabIndex = 16;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
@@ -242,6 +245,7 @@
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -272,5 +276,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblCorreo;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

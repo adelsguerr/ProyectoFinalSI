@@ -181,17 +181,17 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasOrdenes
 
         private void ImprimirTicket()
         {
-            //for (int i = 0; i < dgvOrden.Rows.Count; i++)
-            //{
-            //    total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
-            //}
-            dgvOrden.DataSource = listaOrden;
-            //var dt = new DataTable();
-            var ticket = new Ticket.TicketVenta();
-            ticket.DataSource = listaOrden;
-            ticket.tblOrdenProductos.DataSource = listaOrden;
-            rptTickets.Report = ticket;
-            rptTickets.RefreshReport();
+            ////for (int i = 0; i < dgvOrden.Rows.Count; i++)
+            ////{
+            ////    total += Convert.ToDecimal(dgvOrden.Rows[i].Cells[3].Value);
+            ////}
+            //dgvOrden.DataSource = listaOrden;
+            ////var dt = new DataTable();
+            //var ticket = new Ticket.TicketVenta();
+            //ticket.DataSource = listaOrden;
+            //ticket.tblOrdenProductos.DataSource = listaOrden;
+            //rptTickets.Report = ticket;
+            //rptTickets.RefreshReport();
 
             
         }

@@ -94,23 +94,23 @@
     <Compile Include="Clases\claseOrden.cs" />
     <Compile Include="Clases\claseUsuarios.cs" />
     <Compile Include="Clases\Validaciones.cs" />
-    <Compile Include="Comandas.cs" />
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.cs">
+    <Compile Include="Clases\Comandas.cs" />
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.Designer.cs">
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.Designer.cs">
       <DependentUpon>ventanaBackupRecuperacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.cs">
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaMesaPropina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.Designer.cs">
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaMesaPropina.Designer.cs">
       <DependentUpon>ventanaMesaPropina.cs</DependentUpon>
     </Compile>
-    <Compile Include="formPrincipal.cs">
+    <Compile Include="Ventanas\formPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formPrincipal.Designer.cs">
+    <Compile Include="Ventanas\formPrincipal.Designer.cs">
       <DependentUpon>formPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -121,73 +121,73 @@
     <Compile Include="Ticket\TicketVenta.Designer.cs">
       <DependentUpon>TicketVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaAgregarMenu.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaAgregarMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaAgregarMenu.Designer.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaAgregarMenu.Designer.cs">
       <DependentUpon>ventanaAgregarMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaEditarMenu.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaEditarMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaEditarMenu.Designer.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaEditarMenu.Designer.cs">
       <DependentUpon>ventanaEditarMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaLogueo.cs">
+    <Compile Include="Ventanas\ventanaLogueo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaLogueo.Designer.cs">
+    <Compile Include="Ventanas\ventanaLogueo.Designer.cs">
       <DependentUpon>ventanaLogueo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaMenu.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaMenu.Designer.cs">
+    <Compile Include="Ventanas\ventanasMenu\ventanaMenu.Designer.cs">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.cs">
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaConfiguracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.Designer.cs">
+    <Compile Include="Ventanas\ventanasConfiguracion\ventanaConfiguracion.Designer.cs">
       <DependentUpon>ventanaConfiguracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasOrdenes\Orden.cs">
+    <Compile Include="Ventanas\ventanasOrdenes\Orden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasOrdenes\Orden.designer.cs">
+    <Compile Include="Ventanas\ventanasOrdenes\Orden.designer.cs">
       <DependentUpon>Orden.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasOrdenes\ventanaOrden.cs">
+    <Compile Include="Ventanas\ventanasOrdenes\ventanaOrden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasOrdenes\ventanaOrden.designer.cs">
+    <Compile Include="Ventanas\ventanasOrdenes\ventanaOrden.designer.cs">
       <DependentUpon>ventanaOrden.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\agregarUsuario.cs">
+    <Compile Include="Ventanas\ventanasUsuario\agregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\agregarUsuario.Designer.cs">
+    <Compile Include="Ventanas\ventanasUsuario\agregarUsuario.Designer.cs">
       <DependentUpon>agregarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\ventanaEditarUsuario.cs">
+    <Compile Include="Ventanas\ventanasUsuario\ventanaEditarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\ventanaEditarUsuario.Designer.cs">
+    <Compile Include="Ventanas\ventanasUsuario\ventanaEditarUsuario.Designer.cs">
       <DependentUpon>ventanaEditarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\ventanaUsuario.cs">
+    <Compile Include="Ventanas\ventanasUsuario\ventanaUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanasUsuario\ventanaUsuario.Designer.cs">
+    <Compile Include="Ventanas\ventanasUsuario\ventanaUsuario.Designer.cs">
       <DependentUpon>ventanaUsuario.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.resx">
+    <EmbeddedResource Include="Ventanas\ventanasConfiguracion\ventanaBackupRecuperacion.resx">
       <DependentUpon>ventanaBackupRecuperacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaMesaPropina.resx">
+    <EmbeddedResource Include="Ventanas\ventanasConfiguracion\ventanaMesaPropina.resx">
       <DependentUpon>ventanaMesaPropina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formPrincipal.resx">
+    <EmbeddedResource Include="Ventanas\formPrincipal.resx">
       <DependentUpon>formPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -204,34 +204,34 @@
     <EmbeddedResource Include="Ticket\TicketVenta.resx">
       <DependentUpon>TicketVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaAgregarMenu.resx">
+    <EmbeddedResource Include="Ventanas\ventanasMenu\ventanaAgregarMenu.resx">
       <DependentUpon>ventanaAgregarMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaEditarMenu.resx">
+    <EmbeddedResource Include="Ventanas\ventanasMenu\ventanaEditarMenu.resx">
       <DependentUpon>ventanaEditarMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaLogueo.resx">
+    <EmbeddedResource Include="Ventanas\ventanaLogueo.resx">
       <DependentUpon>ventanaLogueo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaMenu.resx">
+    <EmbeddedResource Include="Ventanas\ventanasMenu\ventanaMenu.resx">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasConfiguracion\ventanaConfiguracion.resx">
+    <EmbeddedResource Include="Ventanas\ventanasConfiguracion\ventanaConfiguracion.resx">
       <DependentUpon>ventanaConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasOrdenes\Orden.resx">
+    <EmbeddedResource Include="Ventanas\ventanasOrdenes\Orden.resx">
       <DependentUpon>Orden.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasOrdenes\ventanaOrden.resx">
+    <EmbeddedResource Include="Ventanas\ventanasOrdenes\ventanaOrden.resx">
       <DependentUpon>ventanaOrden.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasUsuario\agregarUsuario.resx">
+    <EmbeddedResource Include="Ventanas\ventanasUsuario\agregarUsuario.resx">
       <DependentUpon>agregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasUsuario\ventanaEditarUsuario.resx">
+    <EmbeddedResource Include="Ventanas\ventanasUsuario\ventanaEditarUsuario.resx">
       <DependentUpon>ventanaEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanasUsuario\ventanaUsuario.resx">
+    <EmbeddedResource Include="Ventanas\ventanasUsuario\ventanaUsuario.resx">
       <DependentUpon>ventanaUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\app.manifest" />
@@ -249,57 +249,57 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="imgs\Add-New.png" />
-    <Content Include="imgs\AddUser.png">
+    <Content Include="Imgs\Add-New.png" />
+    <Content Include="Imgs\AddUser.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Admin.png">
+    <Content Include="Imgs\Admin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Cancel.png" />
-    <None Include="imgs\logo.png" />
-    <None Include="imgs\logo2.ico" />
+    <Content Include="Imgs\Cancel.png" />
+    <None Include="Imgs\logo.png" />
+    <None Include="Imgs\logo2.ico" />
     <Content Include="logo2.ico" />
-    <None Include="imgs\chngUser.png" />
-    <Content Include="imgs\Eat.png">
+    <None Include="Imgs\chngUser.png" />
+    <Content Include="Imgs\Eat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\edit.png" />
-    <Content Include="imgs\Exit.png">
+    <Content Include="Imgs\edit.png" />
+    <Content Include="Imgs\Exit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Menu.png">
+    <Content Include="Imgs\Menu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\NoteBook.png">
+    <Content Include="Imgs\NoteBook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\OccupiedTable.png" />
-    <Content Include="imgs\ok.png" />
-    <Content Include="imgs\Order.png">
+    <Content Include="Imgs\OccupiedTable.png" />
+    <Content Include="Imgs\ok.png" />
+    <Content Include="Imgs\Order.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Save.png" />
-    <Content Include="imgs\search.png">
+    <Content Include="Imgs\Save.png" />
+    <Content Include="Imgs\search.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Selection.png" />
-    <Content Include="imgs\StatusBar.png">
+    <Content Include="Imgs\Selection.png" />
+    <Content Include="Imgs\StatusBar.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Table.png">
+    <Content Include="Imgs\Table.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\ToolBar.png">
+    <Content Include="Imgs\ToolBar.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\User.png">
+    <Content Include="Imgs\User.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Waiter.png">
+    <Content Include="Imgs\Waiter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="imgs\Wrench.png">
+    <Content Include="Imgs\Wrench.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
