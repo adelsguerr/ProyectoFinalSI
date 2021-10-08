@@ -20,7 +20,7 @@ namespace Proyecto_Final_Periodo3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            formPrincipal main = new formPrincipal();
+            ventanaLogueo main = new ventanaLogueo();
             main.FormClosed += MainForm_Closed;
             main.Show();
             Application.Run();
