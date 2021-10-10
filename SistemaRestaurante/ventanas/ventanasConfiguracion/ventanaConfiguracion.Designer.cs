@@ -72,7 +72,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
             // 
             this.lblMesasPropina.AutoSize = true;
             this.lblMesasPropina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMesasPropina.Location = new System.Drawing.Point(63, 30);
+            this.lblMesasPropina.Location = new System.Drawing.Point(65, 30);
             this.lblMesasPropina.Name = "lblMesasPropina";
             this.lblMesasPropina.Size = new System.Drawing.Size(173, 25);
             this.lblMesasPropina.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
             // 
             this.lblBackupRecovery.AutoSize = true;
             this.lblBackupRecovery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBackupRecovery.Location = new System.Drawing.Point(292, 30);
+            this.lblBackupRecovery.Location = new System.Drawing.Point(283, 30);
             this.lblBackupRecovery.Name = "lblBackupRecovery";
             this.lblBackupRecovery.Size = new System.Drawing.Size(257, 25);
             this.lblBackupRecovery.TabIndex = 3;

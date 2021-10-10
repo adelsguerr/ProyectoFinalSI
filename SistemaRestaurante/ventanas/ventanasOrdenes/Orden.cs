@@ -103,11 +103,11 @@ namespace Proyecto_Final_Periodo3
                     listaOrden = archivoMesas.cargarOrden(Convert.ToInt32(c.Text));
                     if (listaOrden.Count == 0)
                     {
-                        c.Image = new Bitmap(Proyecto_Final_Periodo3.Properties.Resources.Table);
+                        c.Image = new Bitmap(Properties.Resources.Table);
                     }
                     else
                     {
-                        c.Image = new Bitmap(Proyecto_Final_Periodo3.Properties.Resources.OccupiedTable);
+                        c.Image = new Bitmap(Properties.Resources.OccupiedTable);
                     }
 
                 }
