@@ -19,12 +19,6 @@ namespace Proyecto_Final_Periodo3
             InitializeComponent();
         }
 
-        private void Home_Load(object sender, EventArgs e)
-        {
-            //ventanaLogueo logueo = new ventanaLogueo();         
-            //logueo.Close();
-        }
-
         private void tsrAdmin_Click(object sender, EventArgs e)
         {
             bool bandera = true;

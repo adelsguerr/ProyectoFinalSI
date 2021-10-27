@@ -23,8 +23,6 @@ namespace Proyecto_Final_Periodo3.ventanas
             InitializeComponent();
         }
 
-
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -42,7 +40,6 @@ namespace Proyecto_Final_Periodo3.ventanas
                 password[cmbUsuario.Items.Count - 1] = user.Password;
                 administrador[cmbUsuario.Items.Count - 1] = user.Administrador;
             }
-
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -72,11 +69,6 @@ namespace Proyecto_Final_Periodo3.ventanas
                 MessageBox.Show("No ha seleccionado un usuario", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
-        }
-
-        private void cmbUsuario_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
