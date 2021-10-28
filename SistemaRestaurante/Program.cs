@@ -1,10 +1,5 @@
 ﻿using Proyecto_Final_Periodo3.ventanas;
-using Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion;
-using Proyecto_Final_Periodo3.ventanas.ventanasOrdenes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto_Final_Periodo3

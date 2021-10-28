@@ -77,6 +77,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
             this.btnRespaldo.TabIndex = 3;
             this.btnRespaldo.Text = "Generar Respaldo";
             this.btnRespaldo.UseVisualStyleBackColor = true;
+            this.btnRespaldo.Click += new System.EventHandler(this.btnRespaldo_Click);
             // 
             // btnRecuperacion
             // 
@@ -87,6 +88,7 @@ namespace Proyecto_Final_Periodo3.ventanas.ventanasConfiguracion
             this.btnRecuperacion.TabIndex = 7;
             this.btnRecuperacion.Text = "Recuperar";
             this.btnRecuperacion.UseVisualStyleBackColor = true;
+            this.btnRecuperacion.Click += new System.EventHandler(this.btnRecuperacion_Click);
             // 
             // btnBuscarRecuperacion
             // 

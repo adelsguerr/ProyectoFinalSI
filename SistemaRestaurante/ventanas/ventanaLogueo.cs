@@ -67,7 +67,6 @@ namespace Proyecto_Final_Periodo3.ventanas
             catch (Exception)
             {
                 MessageBox.Show("No ha seleccionado un usuario", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
         }
     }
